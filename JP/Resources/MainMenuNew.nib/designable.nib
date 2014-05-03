@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1050" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="2384" id="2400"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <menu title="MainMenu" systemMenu="main" id="487" userLabel="MainMenu">
+            <items>
+                <menuItem title="Unity" id="519">
+                    <menu key="submenu" title="Unity" systemMenu="apple" id="520">
+                        <items>
+                            <menuItem title="Unityとは..." id="495">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="ShowAboutDialog:" target="2384" id="2427"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="プロパティ..." keyEquivalent="," id="526">
+                                <connections>
+                                    <action selector="ShowPreferences:" target="2384" id="2428"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="2367">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="ライセンスマネージャ..." id="2366">
+                                <connections>
+                                    <action selector="EnterSerialNumber:" target="2384" id="2414"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="534">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="サービス" id="444">
+                                <menu key="submenu" title="サービス" systemMenu="services" id="438"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="498">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Hide Unity" keyEquivalent="h" id="541">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="2415"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="544">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="2416"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="450">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="2417"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="510">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Quit" keyEquivalent="q" id="521">
+                                <connections>
+                                    <action selector="terminate:" target="-2" id="603"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                        <connections>
+                            <outlet property="delegate" destination="2270" id="2406"/>
+                        </connections>
+                    </menu>
+                </menuItem>
+                <menuItem title="File" id="458">
+                    <menu key="submenu" title="File" id="501">
+                        <items>
+                            <menuItem title="新規シーン" keyEquivalent="n" id="881">
+                                <connections>
+                                    <action selector="CloseScene:" target="2384" id="2391"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="シーンを開く" keyEquivalent="o" id="1560">
+                                <connections>
+                                    <action selector="LoadSceneFromDisk:" target="2384" id="2392"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="2239">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="シーンを保存" keyEquivalent="s" id="882">
+                                <connections>
+                                    <action selector="saveDocument:" target="-1" id="1578"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="シーンを別名で保存" keyEquivalent="S" id="1561">
+                                <connections>
+                                    <action selector="SaveAsSceneToDisk:" target="2384" id="2393"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="2285">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="新規プロジェクト" id="2232">
+                                <connections>
+                                    <action selector="NewProject:" target="2384" id="2394"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="プロジェクトを開く" id="2238">
+                                <connections>
+                                    <action selector="OpenProject:" target="2384" id="2396"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="プロジェクトを保存" id="917">
+                                <connections>
+                                    <action selector="SaveAssets:" target="2384" id="2397"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="2430">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="ビルド設定" keyEquivalent="B" id="2429">
+                                <connections>
+                                    <action selector="CompileScene:" target="2384" id="2432"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="ビルドして実行" keyEquivalent="b" id="2431">
+                                <connections>
+                                    <action selector="CompileSceneAutomatic:" target="2384" id="2433"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="1603">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="閉じる" keyEquivalent="w" id="782">
+                                <connections>
+                                    <action selector="performClose:" target="-1" id="887"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                        <connections>
+                            <outlet property="delegate" destination="2270" id="2405"/>
+                        </connections>
+                    </menu>
+                </menuItem>
+                <menuItem title="Edit" id="542">
+                    <menu key="submenu" title="Edit" id="485">
+                        <items>
+                            <menuItem title="アンドゥ" keyEquivalent="z" id="500">
+                                <connections>
+                                    <action selector="undo:" target="2409" id="2412"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="リドゥ" keyEquivalent="Z" id="511">
+                                <connections>
+                                    <action selector="redo:" target="2409" id="2413"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="471">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="カット" keyEquivalent="x" id="509">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="555"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="コピー" keyEquivalent="c" id="503">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="549"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="ペースト" keyEquivalent="v" id="449">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="546"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="995">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="複製" keyEquivalent="d" id="1959">
+                                <connections>
+                                    <action selector="duplicate:" target="-1" id="1965"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="削除" id="1961">
+                                <string key="keyEquivalent" base64-UTF8="YES">
+CA
+</string>
+                                <connections>
+                                    <action selector="delete:" target="-1" id="1964"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="1963">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="フレーム選択" keyEquivalent="f" id="2141">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="frameSelected:" target="2384" id="2425"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="選択中のフレームをロック" keyEquivalent="F" id="2467">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="frameSelectedWithLock:" target="2384" id="2469"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="探す" keyEquivalent="f" id="2435">
+                                <connections>
+                                    <action selector="find:" target="2384" id="2438"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="全て選択" keyEquivalent="a" id="484">
+                                <connections>
+                                    <action selector="selectAll:" target="2384" id="2426"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                        <connections>
+                            <outlet property="delegate" destination="2270" id="2404"/>
+                        </connections>
+                    </menu>
+                </menuItem>
+                <menuItem title="Window" id="969">
+                    <menu key="submenu" title="Window" id="970">
+                        <items>
+                            <menuItem title="最小化" keyEquivalent="m" id="971">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="972"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="ズーム" id="2440">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="2441"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="979">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Bring All to Front" id="977">
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="978"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                        <connections>
+                            <outlet property="delegate" destination="2270" id="2403"/>
+                        </connections>
+                    </menu>
+                </menuItem>
+                <menuItem title="Help" id="2276">
+                    <menu key="submenu" title="Help" id="2275">
+                        <connections>
+                            <outlet property="delegate" destination="2270" id="2402"/>
+                        </connections>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <customObject id="2270" userLabel="CocoaMainMenu" customClass="CocoaMainMenu">
+            <connections>
+                <outlet property="m_Edit" destination="485" id="2271"/>
+                <outlet property="m_Help" destination="2275" id="2277"/>
+                <outlet property="m_Windows" destination="970" id="2339"/>
+            </connections>
+        </customObject>
+        <customObject id="2384" userLabel="EditorApplication" customClass="EditorApplication">
+            <connections>
+                <outlet property="m_CopyItem" destination="503" id="2419"/>
+                <outlet property="m_CutItem" destination="509" id="2418"/>
+                <outlet property="m_DeleteItem" destination="1961" id="2424"/>
+                <outlet property="m_DuplicateItem" destination="1959" id="2423"/>
+                <outlet property="m_FindItem" destination="2435" id="2437"/>
+                <outlet property="m_FrameSelectedItem" destination="2141" id="2422"/>
+                <outlet property="m_PasteItem" destination="449" id="2420"/>
+                <outlet property="m_SelectAllItem" destination="484" id="2421"/>
+            </connections>
+        </customObject>
+        <customObject id="2409" userLabel="UndoMenu1" customClass="UndoMenu">
+            <connections>
+                <outlet property="m_RedoItem" destination="511" id="2411"/>
+                <outlet property="m_UndoItem" destination="500" id="2410"/>
+            </connections>
+        </customObject>
+    </objects>
+</document>

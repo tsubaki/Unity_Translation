@@ -1,0 +1,1285 @@
+// Generic Tooltip file for Unity 2.5
+// All controls have a name, and are followed by one or two text strings
+// format is
+//	ControlName: 		Text On Control	| Tooltip to display when we actually display tooltips :-)
+// 	SceneViewLighting:	Lighting | Toggles the Scene Views lighting on and off.
+
+
+// All the built-in Windows
+UnityEditor.InspectorWindow:		インスペクタ
+UnityEditor.DebugInspectorWindow:	デバッグ
+UnityEditor.HierarchyWindow:		ヒエラルキ
+UnityEditor.ProjectWindow:			プロジェクト
+UnityEditor.SceneView:				シーン
+UnityEditor.GameView:				ゲーム
+UnityEditor.ConsoleWindow:			コンソール
+UnityEditor.ASMainWindow:			サーバー
+UnityEditor.AnimationWindow:		アニメーション
+UnityEditor.ProfilerWindow:			プロファイラ
+UnityEditor.AssetStoreWindow:		アセットストア
+UnityEditor.ProjectBrowser:			プロジェクト
+UnityEditor.VersionControl:			バージョン管理
+
+// Graphs Windows
+UnityEditor.Graphs.AnimatorControllerTool:	アニメーター
+
+// Helper windows for window layouts
+UnityEditor.SaveWindowLayout:	レイアウト保存
+UnityEditor.DeleteWindowLayout:	レイアウト削除
+
+// Other windows
+UnityEditor.AnimationEventPopup:	アニメーションイベント編集
+UnityEditor.AnimationCleanupPopup:	カーブをクリーンアップ
+
+// Asset Save dialog
+SaveAssetDialog.Title:				アセットを保存
+SaveAssetDialog.SaveSelected:		選択対象を保存
+SaveAssetDialog.SaveAll:			全て保存
+SaveAssetDialog.DontSave:			保存しない
+SaveAssetDialog.Close:				閉じる
+
+// Scene view
+// -------------------------------------------------------------------
+SceneviewLighting:	ライティング | 内蔵の証明のオンオフを切り替えます
+SceneviewFx:			Fx | スカイボックス・霧とレンズ・フレアの効果を切替ます
+SceneviewAudio:			AudioPlay | オーディオのオンオフを切り替えます
+
+// Popup menu for TextFields
+TextEditorPopup.Cut: カット
+TextEditorPopup.Copy: コピー
+TextEditorPopup.Paste: 貼り付け
+TextEditorPopup.Delete: 削除
+
+
+
+// Hierarchy Window
+//---------------------------------------------------------------------------
+HierarchyPopupCopy:			・コピー
+HierarchyPopupPaste:		貼り付け
+HierarchyPopupDuplicate:	複製
+HierarchyPopupRename:		リネーム
+HierarchyPopupDelete:		削除
+HierarchyPopupSelectPrefab:	プレハブを選択
+
+
+// Main application toolbar
+// -------------------------------------------------------------------
+ViewToolOrbit:				| シーンビューを周回
+ViewtoolMove:				| シーンビューを移動
+ViewtoolZoom:				| シーンビューをズーム
+MoveTool:						| 選択中のオブジェクトを動かす
+RotateTool:						| 選択中のオブジェクトを回す
+ScaleTool:						| 選択中のオブジェクトを拡大縮小
+ToolHandleCenter:	中心		| ツールハンドルを中心に配置
+ToolHandlePivot:		ピボット 		| ツールハンドルはアクティブオブジェクトのピボットに配置
+ToolHandleGlobal:	グローバル		| ツールハンドルはグローバル回転
+ToolHandleLocal:	ローカル 		| ツールハンドルはアクティブオブジェクトで回転
+ToolbarLayers:		レイヤー	| シーンビューに表示するレイヤーを選択
+ToolbarLayout:		レイアウト	| アプリケーションウィンドウのレイアウトを選択
+
+
+// PaneMenu
+DockAreaMaximize: 	最大化
+DockAreaAddTab: 		タブを追加
+DockAreaCloseTab: 	タブを閉じる
+
+// Color Picker
+// -------------------------------------------------------------------
+EyeDropper.Large:								| 画面から色を選択
+ColorPicker.ColorFoldout: 	  		色
+ColorPicker.ColorCycle: 		  	サイクル 	| サイクル使用可能なカラースペースのリスト
+ColorPicker.SliderFoldout: 			スライダー | RGBまたはHSVのカラースライダ
+ColorPicker.SliderCycle: 			サイクル 	| サイクル可能なスライダーのリスト
+
+// Profiler Window
+// -------------------------------------------------------------------
+Profiler.AddArea:                   プロファイラ追加    | プロファイラエリアを追加
+Profiler.CurrentProfiler:           アクティブプロファイラ | プレイヤーを選択してプロファイラに接続
+Profiler.Record:                    レコード          | レコードのプロファイル情報
+Profiler.PrevFrame:                                 | 1フレーム戻る
+Profiler.NextFrame:                                 | 1フレーム進む
+Profiler.CurrentFrame:              現在値         | 現在のフレームに移動
+Profiler.FrameTime:                 フレーム時間      | フレームあたりの合計時間
+Profiler.CPU:                       CPU使用率      | CPUのエリアをグラフ化
+Profiler.GPU:                       GPU使用率       | GPUエリアをグラフ化
+Profiler.Memory:                    メモリ          | メモリ使用域をグラフ化
+Profiler.CPU.Scripts:               スクリプト         | スクリプトの処理時間
+Profiler.CPU.Physics:               物理演算         | 物理演算の処理時間
+Profiler.CPU.Rendering:             レンダリング       | レンダリング処理時間
+Profiler.Rendering:                 レンダリング
+Profiler.Physics:                   物理演算
+Profiler.Physics2D:                 物理演算 (2D)
+Profiler.CPU.Other:                 その他           | その他
+Profiler.NoLicense:                 プロファイラはPro専用です
+Profiler.Audio:                     オーディオ
+Profiler.NoFrameDataAvailable:      利用可能なフレームデータがありません
+
+Profiler.FrameOverview:            フレームの概要
+Profiler.DeepProfile:               詳細なプロファイラ     | 全てのMonoを計測
+Profiler.SyncTimeProfiling:         時刻同期プロファイラ | FPS同期に費やされた時間
+Profiler.ProfileEditor:             プロファイラエディタ   | エディタプロファイリングを有効にする
+
+ProfilerColumn.FunctionName:        概要
+ProfilerColumn.TotalPercent:        合計
+ProfilerColumn.SelfPercent:         Self
+ProfilerColumn.Calls:               calls
+ProfilerColumn.GCMemory:            GC Alloc
+ProfilerColumn.TotalTime:           Time ミリ秒
+ProfilerColumn.SelfTime:            Self ミリ秒
+ProfilerColumn.DrawCalls:           ドローコール
+ProfilerColumn.TotalGPUTime:        GPU ミリ秒
+ProfilerColumn.SelfGPUTime:         Self ミリ秒
+ProfilerColumn.TotalGPUPercent:        合計
+ProfilerColumn.SelfGPUPercent:         Self
+ProfilerColumn.WarningCount:      | 警告
+ProfilerColumn.ObjectName:          名前
+ProfilerColumn.DetailViewObject:    オブジェクト
+
+
+MemoryInfoGCReason.SceneObject:                             シーンオブジェクト (新しいシーンをロードするか、オブジェクトの破棄によりアンロードされる)
+MemoryInfoGCReason.BuiltinResource:                         組込リソース (破棄出来ない)
+MemoryInfoGCReason.MarkedDontSave:                          オブジェクトは保存されない (明示的に破棄しない場合、リークする)
+MemoryInfoGCReason.AssetMarkedDirtyInEditor:                不正なアセットです。事前に保存して下さい (Editorのみ)
+
+MemoryInfoGCReason.SceneAssetReferencedByManagedCodeOnly:   アセットはコードもしくはシーンにから作成され、スクリプトから参照されている
+MemoryInfoGCReason.SceneAssetReferencedByNativeCodeOnly:    アセットはコードもしくはシーンから作成され、ネイティブコードから参照されている
+MemoryInfoGCReason.SceneAssetReferenced:                    アセットはコードもしくはシーンから作成され、スクリプト及びネイティブコードから参照されている
+
+MemoryInfoGCReason.AssetReferencedByManagedCodeOnly:        アセットはスクリプトから参照されている
+MemoryInfoGCReason.AssetReferencedByNativeCodeOnly:         アセットはネイティブコードから参照されている
+MemoryInfoGCReason.AssetReferenced:                         アセットはスクリプトとネイティブコードから参照されている
+MemoryInfoGCReason.NotApplicable:                           適用されていない
+
+
+// Snap Setting Popup
+// -------------------------------------------------------------------
+Snap.SnapAllAxes:		全軸スナップ | スナップはグリッドにオブジェクトを選択
+Snap.SnapX:				X | X軸上のグリッドにオブジェクトを選択
+Snap.SnapY:				Y | Y軸上のグリッドにオブジェクトを選択
+Snap.SnapZ:				Z | Z軸上のグリッドにオブジェクトを選択
+Snap.MoveX:				移動 X | Xグリッド間隔で移動
+Snap.MoveY:				移動 Y | Yグリッド間隔で移動
+Snap.MoveZ:				移動 Z | Zグリッド間隔で移動
+Snap.Scale:				スケール | スケーリングの為のグリッド
+Snap.Rotation:			回転 |  グリッド間隔で回転
+
+// Welcome Screen
+// -------------------------------------------------------------------
+"// ""Welcome to Unity"" is an image"
+WelcomeScreen.MainText: あなたがUnityに飛び込むように、我々は良いスタートにあなたを得るためにいくつかのヒントを提案することができる？
+WelcomeScreen.ShowAtStartup: スタートアップを表示
+
+// WelcomeScreen.VideoTutLogo is an image
+WelcomeScreen.VideoTutHeader: 		ビデオチュートリアル
+WelcomeScreen.VideoTutText: 			生産性を高めるため、幾つかのビデオを確認しましょう
+
+// WelcomeScreen.UnityBasicsLogo is an image
+WelcomeScreen.UnityBasicsHeader: Unityの基礎
+WelcomeScreen.UnityBasicsText: 素早く学習したい場合、一度マニュアルを見て下さい
+
+// WelcomeScreen.UnityAnswersLogo is an image
+WelcomeScreen.UnityAnswersHeader: Unity Answers
+WelcomeScreen.UnityAnswersText: Unityに関する質問がある場合、ここに質問して下さい。ノウハウや回答が得られます
+
+// WelcomeScreen.UnityForumLogo is an image
+WelcomeScreen.UnityForumHeader: Unity Forum
+WelcomeScreen.UnityForumText: Unityのコミュニティです。気軽に相談下さい
+
+// WelcomeScreen.AssetStoreLogo is an image
+WelcomeScreen.AssetStoreHeader: Unity Asset Store
+WelcomeScreen.AssetStoreText: Unityエディタに統合されたアセットストアで、アセットやゲームコード、エディタの拡張を手に入れて下さい
+
+
+// Editor Update Check Window
+// -------------------------------------------------------------------
+EditorUpdateWindow.Title: エディタのアップデート確認
+EditorUpdateWindow.TextHasUpdate: ダウロード可能な新しいUnityエディタがあります。\n\n 現在のバージョン {0}\n 新規バージョン {1}
+EditorUpdateWindow.TextUpToDate: Unityエディタは最新です。現在のバージョン {0}
+EditorUpdateWindow.CheckForNewUpdatesText: アップデートをチェック
+
+
+// Previews and Asset Labels
+InspectorPreviewTitle: プレビュー
+InspectorLabelTitle: 焦っトラベル
+
+
+// Model importer Inspector
+// -------------------------------------------------------------------
+ModelImporter.Meshes:			メッシュ			| これらのオプションは、ジオメトリをインポートする方法を制御します
+ModelImporter.ScaleFactor:		倍率		| ソースファイル内にあるものと比較して、モデルを拡張する方法くらい。
+ModelImporter.UseFileUnits:		ファイルのUnitsを使用		| ファイル単位を検出し、1FileUnit=1UnityUnitとしてインポート、そうでない場合は、1センチメートル=1UnityUnitとしてインポートされます。詳細はModelImporter.useFileUnitsを参照してください。
+ModelImporter.ImportBlendShapes:	ブレンドシェイプをインポート	| ブレンドシェイプをインポートします
+ModelImporter.GenerateColliders:	コライダーを生成	| メッシュコライダーを使用する場合設定する必要があります
+ModelImporter.SwapUVChannels:	UV入れ替え		| メッシュ内の2のUVチャンネルを入れ替えます。あなたのディフューズテクスチャがライトマップからUVを使用している場合に使用します
+
+ModelImporterGenerateSecondaryUV:	        ライトマップUVを生成		| UV2にライトマップUVを生成します
+ModelImporterGenerateSecondaryUVAdvanced:   高度な設定
+ModelImporterSecondaryUVAngleDistortion:    角度誤差 | パーセントで測定された。 UVの角度誤差を測定偏差は、ジオメトリ角度から角度。彼らは一様にスケールされた場合、UVの領域エラー対策偏差は幾何学の三角形からエリアを三角形
+ModelImporterSecondaryUVAreaDistortion:     範囲誤差
+ModelImporterSecondaryUVHardAngle:          ハード角度 | 隣接する三角の角度からシームを生成
+ModelImporterSecondaryUVPackMargin:         パックマージン | メッシュ全体が1024x1024のライトマップをカバーすると仮定してピクセルを計測
+ModelImporterSecondaryUVDefaults:           標準設定
+
+ModelImporterMaterials:			マテリアル
+ModelImporterMatImportMaterials:				マテリアルインポート
+ModelImporterMatMaterialName:					マテリアルの命名
+ModelImporterMatMaterialNameTex:				ベーステクスチャ名による
+ModelImporterMatMaterialNameMat:				モデルのマテリアルから
+ModelImporterMatMaterialNameModelMat:			モデル名とマテリアル名
+ModelImporterMatMaterialNameTex_ModelMat:		テクスチャ名もしくはモデル名 + モデルのマテリアル (廃止)
+ModelImporterMatMaterialSearch:					マテリアル検索
+ModelImporterMatMaterialSearchLocal:			ローカルマテリアルフォルダ
+ModelImporterMatMaterialSearchRecursiveUp:		再起
+ModelImporterMatMaterialSearchEverywhere:		プロジェクト全体
+ModelImporterMatDefaultHelp:					新たなマテリアルが生成されません。Unity標準のDeffuseマテリアルが使用されます
+ModelImporterMatHelpStart:						Unithは最初 %MAT%.という名前のマテリアルを探します
+ModelImporterMatHelpEnd:						見つからない場合、新たにローカルマテリアルをフォルダに作成します
+ModelImporterMatMaterialNameTexHelp:			[BaseTextureName]
+ModelImporterMatMaterialNameMatHelp:			[MaterialName]
+ModelImporterMatMaterialNameModelMatHelp:		[ModelFileName]-[MaterialName]
+ModelImporterMatMaterialNameTex_ModelMatHelp:	[BaseTextureName] もしくは [ModelFileName]-[MaterialName] もしテクスチャが見つからない場合
+ModelImporterMatMaterialSearchLocalHelp:		ローカルのマテリアルフォルダを検索
+ModelImporterMatMaterialSearchRecursiveUpHelp:	全てのマテリアルフォルダに対し再起的に検索
+ModelImporterMatMaterialSearchEverywhereHelp:	全てのフォルダ内を検索
+ModelImporterOptimizeMesh:			メッシュの最適化			| より良いGPUパフォーマンスのため頂点とインデックスを並び替える
+ModelImporterIsReadable:			読取/書込をON		| 頂点とインデックスはスクリプトからアクセス可能にする
+ModelImporterImportAnimations:			アニメーションをインポート	| アニメーションをインポートする
+ModelImporterAnimComprSetting:							アニメーション 圧縮 | メッシュのアニメーションに適応する圧縮タイプ（複数可）
+ModelImporterAnimComprSettingOff:						OFF | アニメーション圧縮を無効にします。これはUnityは、最高の精度アニメーションにつながる輸入にキーフレーム数、が、パフォーマンスの低下や大きなファイルと実行時のメモリサイズを減少させないことを意味します。あなたがより高い精度のアニメーションが必要な場合は、キーフレームの削減を可能にし、代わりに許可されたアニメーション圧縮エラー値を下げる必要があります - それは一般的に、このオプションを使用することはお勧めできません。
+ModelImporterAnimComprSettingReduction:					キーフレーム削減 | インポート時にキーフレームを低減します。選択した場合は、アニメーション圧縮エラーオプションが表示されます。
+ModelImporterAnimComprSettingReductionAndCompression:	キーフレームの削減と圧縮 | インポート時にキーフレームを減らし、ファイルにアニメーションを格納するときにキーフレームを圧縮します。これは、ファイルサイズに影響を与える - ランタイムメモリサイズは縮小キーフレームと同じである。選択した場合は、アニメーション圧縮エラーオプションが表示されます。
+ModelImporterAnimComprSettingOptimal:					最適 | インポート時にキーフレームを減らし、実行時のメモリ使用量を削減するために、異なる曲線表現のどちらかを選択。これは、ランタイムメモリサイズに影響し、曲線の評価方法
+ModelImporterAnimComprRotationError:					回転誤差 | 削減することがどの程度回転カーブを定義します。値が小さいほどあなたが使用 - あなたが得るより高い精度を
+ModelImporterAnimComprPositionError:					位置誤差 | 削減することがどの程度の位置の曲線を定義します。値が小さいほどあなたが使用 - あなたが得るより高い精度を。
+ModelImporterAnimComprScaleError:						スケール誤差 | 削減することがどの程度のスケールの曲線を定義します。値が小さいほどあなたが使用 - あなたが得るより高い精度を。
+ModelImporterAnimComprHelp:								回転誤差は他のための度に許可された最大角度偏差として定義され、それはパーセントで許容される最大距離/デルタ偏差として定義されている
+ModelImporterAnimationType:				アニメーションタイプ | インポートをサポートするアニメーションのタイプ
+ModelImporterAnimationTypeNone:			None | アニメーション無し
+ModelImporterAnimationTypeLegacy:		レガシー | 古いアニメーションシステム
+ModelImporterAnimationTypeGeneric:		汎用 | 汎用 メカニムアニメーション
+ModelImporterAnimationTypeHumanoid:		ヒューマノイド | ヒューマノイドメカニムアニメーションシステム
+ModelImporterAnimLabel:			世代 | アニメーションのインポート方法を制御
+ModelImporterAnimNone:			インポートしない | アニメーションやスキニングはインポートされません。
+ModelImporterAnimOrigRoot:		オリジナルRootを格納（非推奨）| アニメーションは、アニメーションパッケージのルートオブジェクトに格納されていない (これらは、Unityのルートオブジェクトとは異なる場合があります)
+ModelImporterAnimNode:			ノードに保管 (非推奨) | アニメーションは、彼らがアニメーション化するオブジェクトと一緒に保存されます。あなたは複雑なアニメーションを設定していると、完全なスクリプティング制御したい場合に使用します。
+ModelImporterAnimRoot:			ルートに格納 (非推奨) | アニメーションは、シーンの転換ルートオブジェクトに格納されています。階層が何をアニメーションする際に使用します。
+ModelImporterAnimRootNew:		ルートに格納 (New)
+ModelImporterAnimBakeIK:			アニメーションを焼く | アニメーションパッケージにIKやシミュレーションを使用している場合、これを有効にします。 Unityはインポート時に運動学を転送するように変換されます。このオプションは、Maya、3DSMAXとCinema4Dファイルに対して利用可能です
+ModelImporterAnimWrapMode:				繰り返し設定 | メッシュのアニメーションのデフォルトラップモードをインポート
+ModelImporterAnimWrapModeDefault:		標準	| 下のアニメーションの分割オプションで指定されたアニメーションが再生されます。
+ModelImporterAnimWrapModeOnce:			1回のみ	| アニメーションは、一度最後まで再生し、その後、停止します。
+ModelImporterAnimWrapModeLoop:			ループ	| アニメーションはを通して再生し、その後、最後に達したときに再起動します。
+ModelImporterAnimWrapModePingPong:		ピンポン | アニメーションは、一度再生し、その後逆方向から再生します
+ModelImporterAnimWrapModeClampForever:  ClampForever |アニメーションはを通して演じたが、最後のフレームが無限に繰り返されている。再生は技術的に（アニメーションをブレンドする際に便利です）最後のフレームで停止しないので、これはモード一度と同じではありません。
+ModelImporter.TangentSpace.Title:					ノーマル & トライアングル
+ModelImporter.TangentSpace.Normals:					ノーマル
+ModelImporter.TangentSpace.Tangents:				トライアングル
+ModelImporter.TangentSpace.Options.Import:			インポート
+ModelImporter.TangentSpace.Options.Calculate:		計算
+ModelImporter.TangentSpace.Options.None:			None
+ModelImporter.TangentSpace.NormalSmoothingAngle:	スムーズな角度	| ノーマルスムーズアングル
+ModelImporter.TangentSpace.SplitTangents:			三角を分割
+ModelImporterRigAdditionalBone:						追加ボーンを維持 | 人間の子供は変換がない、すべてのトランスを削除するにはオフにします。あなたはそれらの上でアニメーションを持っていないことがわかっている場合は、自分のアバターのサイズを小さくするには、このオプションのチェックを外す変換。
+ModelImporterRigUpdateMuscleDefinitionFromSource:	アップデート | ソースからの筋肉の定義のコピーを更新します。
+ModelImporterRigRootNode:							ルートノード| アニメーションの翻訳を抽出するために使用されるルート·ノードを指定します。
+ModelImporterRigAvatarDefinition:					アバター定義 | このモデルから作成するか、または他のアバターからのコピーのいずれかを選択。最初の1このファイルのアバターを作成し、第1は、アニメーションをインポートする別のファイルからアバターを使用しています。
+ModelImporterRigCreateFromThisModel:				このモデルから作成 | このファイルからのモデルに基づいてアバターを作成します。
+ModelImporterRigCopyFromOtherAvatar:				他のアバターからのコピー | 筋肉のクリップをインポートする別のファイルからアバターをコピーします。アバターは作成されません。
+ModelImporterRigUpdateReferenceClips:				参照クリップを更新 | このファイルを参照するすべての「@規則ファイル」を更新するには、このボタンをクリックしてください。 他のアバターからのコピーこの1ソースアバターを設定し、これらのすべてのファイルを再インポートするには、これらすべてのファイルを設定する必要があります。
+
+
+// GameObject Inspector
+// -------------------------------------------------------------------
+GameObjectTypePrefab:					プレハブ
+GameObjectTypeModel:					モデル
+GameObjectTypeMissing:					Missing | 参照先のプレハブもしくはモデルが削除された
+GameObjectTypeDisconnectedPrefab:		プレハブ | プレバブが壊れています
+GameObjectTypeDisconnectedModel:		モデル |  モデルとプレハブの接続が壊れています
+
+// Animation Window
+// -------------------------------------------------------------------
+CurveKeyPopupAuto:											自動
+CurveKeyPopupFreeSmooth:							自由に滑らか
+CurveKeyPopupFlat:											平たい
+CurveKeyPopupBroken:									途切れ途切れ
+CurveKeyPopupLeftTangent/Free: 					左タンジェント/自由
+CurveKeyPopupLeftTangent/Linear:				左タンジェント/線形
+CurveKeyPopupLeftTangent/Constant:			左タンジェント/不変
+CurveKeyPopupRightTangent/Free:				右タンジェント/自由
+CurveKeyPopupRightTangent/Linear:			右タンジェント/線形
+CurveKeyPopupRightTangent/Constant:		右タンジェント/不変
+CurveKeyPopupBothTangents/Free:				両方タンジェント/自由
+CurveKeyPopupBothTangents/Linear:			両方タンジェント/線形
+CurveKeyPopupBothTangents/Constant:		両方タンジェント/不変
+
+Animation.Play:																| 範囲内でアニメーションクリップを再生
+Animation.PrevKey:															| 前のフレームに移動
+Animation.NextKey:															| 次のキーフレームに移動
+Animation.Record:															| シーンや検査員の変更がアニメーションカーブに記録されていますか？
+Animation.AddKeyframe:															| キーフレーム追加
+Animation.AddEvent:															| イベントを追加
+Animation.ShowEvents: イベント									| アニメーション化されたオブジェクトイベントを表示
+Animation.ShowAllPropertiesOn: 全プロパティ		| 全てのプロパティを表示
+Animation.ShowAllPropertiesOff: アニメーションのみ		| アニメーション化されたプロパティのみ表示
+
+
+// Terrain Inspector
+// -------------------------------------------------------------------
+// Main toolbar
+TerrainInspector.TerrainToolRaise:							| 地形の高さを上下
+TerrainInspector.TerrainToolSetHeight:					| 地形の高さを設定
+TerrainInspector.TerrainToolSmoothHeight:			| 地形の高さを滑らかにする
+TerrainInspector.TerrainToolSplat:							| 地形をペイントする
+TerrainInspector.TerrainToolTrees:							| 木を設定
+TerrainInspector.TerrainToolPlants:						| 植物や石、葉を配置
+TerrainInspector.TerrainToolSettings:						| 地形の設定
+
+// Help strings (appears below the main toolbar
+TerrainInspector.RaiseHeightTip: 上昇/下降地形 	| 調達するをクリックします。下へのシフトを押したままにします。
+TerrainInspector.PaintHeightTip: ペイントの高さ					| サンプルターゲット高への移行を開催しています
+TerrainInspector.SmoothHeightTip:スムーズの高さ				| 地形を滑らかに塗る
+TerrainInspector.PaintTextureTip: テクスチャをペイント					| 下のテクスチャを選択して、ペイントをクリック
+TerrainInspector.PlaceTreesTip:	木を配置						| Hold down shift to erase trees.\nHold down ctrl to erase the selected tree type.
+TerrainInspector.PaintDetailsTip: 詳細をペイント						| Hold down shift to erase.\nHold down ctrl to erase the selected detail type.
+TerrainInspector.TerrainSettingsTip: 地形の設定
+
+// Generic thingies used in various places in terrain editor
+TerrainInspector.Settings:				設定
+TerrainInspector.BrushSize:			ブラシ設定							| 描画に使用するブラシのサイズ
+TerrainInspector.BrushOpacity:	不透明								| 適用された効果の強さ
+TerrainInspector.Brushes:				ブラシ
+
+// Textures
+TerrainInspector.Textures.Textures:	テクスチャ
+TerrainInspector.Textures.Edit:				テクスチャの設定
+
+// Tree Tool
+TerrainInspector.Trees.Trees:			木
+TerrainInspector.Trees.NoTrees:定義されていない木|以下の使用編集ボタン新しいツリータイプを追加する。 
+TerrainInspector.Trees.EditTrees:編集ツリー...|追加/木の種類を削除します。 
+TerrainInspector.Trees.TreeDensity:木の密度|使い方密木あなたがペイントしている 
+TerrainInspector.Trees.ColorVar:カラーバリエーション|ランダムシェーディング量は木々に適用される 
+TerrainInspector.Trees.TreeHeight:樹高|植林木の高さ 
+TerrainInspector.Trees.TreeHeightVar:バリエーション|木の高さのランダムな変動 
+TerrainInspector.Trees.TreeWidth:木幅|植林木の幅 
+TerrainInspector.Trees.TreeWidthVar:バリエーション|ツリー幅のランダムな変動 
+
+// Details
+TerrainInspector.Details.Details:細部 
+TerrainInspector.Details.Edit:編集の詳細...|追加/詳細メッシュを削除 
+TerrainInspector.Details.TargetStrength:筋力をターゲット|目標量 
+
+// Import/Export heightmaps
+TerrainInspector.Heightmaps.Heightmap:ハイトマップ 
+TerrainInspector.Heightmaps.ImportRaw:インポート生... 
+TerrainInspector.Heightmaps.ExportRaw:輸出生... 
+TerrainInspector.Heightmaps.Flatten:平らにする 
+
+TerrainInspector.Refresh:リフレッシュ 
+TerrainInspector.Resolution:解像度 
+TerrainInspector.MassPlaceTrees:マス置き木 
+
+// Warnings
+TerrainInspector.ShaderWarning: 代わりに自然/地形にシェーダを使用し、地形上の接線ジオメトリを必要とするシェーダを有する材料を使用することはできません。
+
+// Material Inspector
+// -------------------------------------------------------------------
+MaterialInspector.BumpMapFixingWarning: このテクスチャは、通常のマップとしてマークされていません 
+MaterialInspector.BumpMapFixingButton:今すぐ修正 
+
+PerformanceChecks.ShaderUsesWhiteColor:シェーダーは何もしません白色を使用しています。パフォーマンスのため{0}シェーダの使用を検討してください。 
+PerformanceChecks.ShaderHasMobileVariant:パフォーマンスのために、このプラットフォームでは{0}シェーダの使用を検討してください。 
+PerformanceChecks.ShaderMobileSkybox:スカイボックスシェーダーは何もしません灰色を使用しています。パフォーマンスのため{0}シェーダの使用を検討してください。 
+PerformanceChecks.ShaderExpensive:シェーダーは、このプラットフォームで高価になるかもしれません。簡単なシェーダに切り替えることを検討してください。モバイルシェーダの下に見える。 
+PerformanceChecks.ShaderUseUnlit:あなたは消灯オブジェクト（白発光）をシミュレートするためにVertexLitシェーダを使用しているように見えます。パフォーマンスのために代わりに消灯シェーダのいずれかを使用します。 
+PerformanceChecks.ShaderNoNormalMap:法線は法線マップなしでシェーダをマップしました。パフォーマンスのために非正規マッピングされたシェーダを使用することを検討してください。
+
+// Camera Editor
+// -------------------------------------------------------------------
+CameraEditor.DeferredProOnly:繰延照明はUnityProを必要とします。
+
+// Light Editor
+// -------------------------------------------------------------------
+LightEditor.ForwardRenderingShadowsWarning:唯一のディレクショナルライトは、前方レンダリングで影を持っている。 |あなたが「 fullforwardshadows 'ディレクティブを使用してカスタム面シェーダを記述することによって、完全な影のサポートを有効にすることができます。
+LightEditor.NoShadowsWarning: リアルタイムポイントの影やスポットライトがUnityはプロが必要です。
+LightEditor.AreaLightsProOnly:エリアライトは、UnityProを必要とする。
+LightEditor.WrongColorSpaceWarning: ライトマップは、間違った色空間で焼成する。
+
+
+// Light Probe Group Inspector
+// -------------------------------------------------------------------
+LightProbeGroup.ProOnly:ライトプローブを使用するにはProが必要です
+
+
+// Quality Settings editor
+// -------------------------------------------------------------------
+QualitySettings.SoftParticlesHint:ソフトパーティクルは延期照明を使用するか、カメラが深度テクスチャをレンダリングすることが必要です。
+
+
+// TEXTURE IMPORTER
+// -------------------------------------------------------------------
+TextureImporter.TextureType:テクスチャタイプ|何このテクスチャが使用されます？
+TextureImporter.TextureType.Image:テクスチャは|テクスチャは、ディフューズテクスチャやその他のような通常の画像である。
+TextureImporter.TextureType.Normalmap:通常の地図|テクスチャはバンプや法線マップである。
+TextureImporter.TextureType.GUI:GUIは|テクスチャはGUI要素のために使用される。
+TextureImporter.TextureType.Sprite:スプライト|テクスチャがスプライトに使用されます。
+TextureImporter.TextureType.Cursor:テクスチャがカーソルに使用されている|カーソル。
+TextureImporter.TextureType.Reflection:反射は|テクスチャは、反射キューブマップです。
+TextureImporter.TextureType.Cookie:クッキーは|テクスチャを使用すると、光に置くクッキーです。
+TextureImporter.TextureType.Lightmap:ライトマップ|テクスチャライトマップです。
+TextureImporter.TextureType.Advanced:すべての設定が表示された|進んだ。
+TextureImporter.Alpha:アルファチャンネルがある
+TextureImporter.Alpha.Specular:鏡面
+TextureImporter.Alpha.Transparent:透明性
+
+TextureImporter.Cookie:ライトタイプ
+TextureImporter.Cookie.Spot:スポットライト
+TextureImporter.Cookie.Directional:指向
+TextureImporter.Cookie.Point:ポイント
+TextureImporter.GenerateFromBump:グレースケールから作成|画像の階調は、法線マップを生成するためのハイトマップとして使用されます。
+TextureImporter.Bumpiness:気流の悪さ
+TextureImporter.BumpFiltering: フィルタリング
+TextureImporter.BumpFiltering.Smooth:スムーズ
+TextureImporter.BumpFiltering.Sharp:シャープ
+
+TextureImporter.MipmapFadeToggle:フェードアウトのMIPマップ
+TextureImporter.MipmapFade:フェードレンジ
+TextureImporter.MipMapsInLinearSpace:線形空間|線形空間でミップマップ生成を実行します。
+
+TextureImporter.RefMap: マッピング
+TextureImporter.GenerateCubemap:キューブマップを生成する
+TextureImporter.RefMap.Sphere:球マッピングされた
+TextureImporter.RefMap.Cylindrical:円筒形
+TextureImporter.RefMap.SimpleSphere:シンプルな球体
+TextureImporter.RefMap.NiceSphere:ニーススフィア
+TextureImporter.RefMap.FullCubemap:6フレームレイアウト|テクスチャ6標準キューブマップレイアウトのいずれかに配置された画像が含ま - クロスまたはシーケンス（ + X、-X、+ Y 、 -γ 、 - zは、 + z）を。テクスチャは垂直または水平方向にあることができる。
+
+TextureImporter.SeamlessCubemap:フィックスアップエッジシーム|このテクスチャは光沢のある反射のために使用されている場合有効にします。
+
+TextureImporter.Platforms.Default:デフォルト
+TextureImporter.MaxSize:最大サイズは、 |これより大きいテクスチャが縮小されます。
+TextureImporter.TextureFormat:フォーマット
+TextureImporter.CompressionQuality:品質
+TextureImporter.TextureFormat.Compressed:圧縮
+TextureImporter.TextureFormat.16 bit:16ビット
+TextureImporter.TextureFormat.Truecolor:トゥルーカラー
+TextureImporter.TextureFormat.2bit:2ビット
+TextureImporter.TextureFormat.4bit:4ビット
+
+TextureImporter.Npot:非2の累乗のテクスチャをインポート時にスケーリングされますか| 2の非電源をオンにします。
+TextureImporter.ReadWrite:コードからの生のピクセルデータにアクセスできるようにするために有効にします|読み/書き込み可能。
+TextureImporter.GenerateAlphaFromGrayscale:グレースケールのアルファ|グレースケールからテクスチャのアルファチャンネルを生成します。
+TextureImporter.LinearTexture:バイパスsRGBのサンプリング|テクスチャがサンプリング時に線形ガンマ空間から変換されません。 、 GUIテクスチャに対して有効にテクスチャと同じようなを検索します。
+TextureImporter.GenerateMipMaps:ミップマップを生成する
+TextureImporter.BorderMipMaps:国境のMIPマップ
+TextureImporter.NormalMap:法線マップ|このテクスチャは、3Dパッケージから焼き法線マップであれば有効にします。
+TextureImporter.Lightmap:ライトマップ|これはライトマップであれば有効にします（最高のEXR形式で保存されている場合） 。
+TextureImporter.MipMapFilter:ミップマップフィルタリング
+TextureImporter.MipMapFilterOptions.Box:ボックス
+TextureImporter.MipMapFilterOptions.Kaiser:カイザー
+TextureImporter.CompressionQuality:                 圧縮品質
+TextureImporter.CompressionQualityOptions.Fast:     速い
+TextureImporter.CompressionQualityOptions.Normal:   通常の
+TextureImporter.CompressionQualityOptions.Best:     ベスト
+
+TextureImporter.SpriteMode:                     スプライトモード
+TextureImporter.SpriteModeOptions.None:         なし
+TextureImporter.SpriteModeOptions.SingleSprite: シングル
+TextureImporter.SpriteModeOptions.Multiple:     複数
+TextureImporter.SpritePackingTag:               タグパッキング|スプライトパッキングシステム用のタグ。
+TextureImporter.SpriteExtrude:                  エッジを押し出す|生成されたメッシュにスプライトの周りに残すためにどのくらいの空きエリア。
+TextureImporter.SpriteMeshType:                 生成するタイプのスプライトメッシュ|メッシュタイプ。
+TextureImporter.SpriteMeshTypeOptions.FullRect: フルのRect
+TextureImporter.SpriteMeshTypeOptions.Tight:    タイト
+TextureImporter.SpritePixelsToUnits:            ユニットにピクセル|生成されたメッシュのスケール。
+TextureImporter.SpriteColliderAlphaCutoff:コライダーアルファ|画像ベースの加速器の最小衝突可能アルファ値
+TextureImporter.SpriteColliderDetail:           衝突型加速器の詳細
+TextureImporter.GenerateSpritePolygon:          ポリゴンアセットを生成
+TextureImporter.SpritePolygonAlphaCutoff:       アルファカットオフ
+TextureImporter.SpritePolygonDetail:            詳細
+TextureImporter.SpritePolygonHoles:             穴を検出
+TextureImporter.AlphaIsTransparency:アルファ透明性
+
+TextureImporter.WrapWarning: グラフィックスデバイスはNPOTテクスチャを繰り返しラップモードをサポートしていません。バッククランプに落ちる。
+
+// SPRITES
+SpriteInspector.Pivot:ピボット|そのlocalspaceスプライトのピボットポイント。異なるサイズのアニメーションフレームを同期するために使用することができる。
+SpriteInspector.Pivot.Center:センター
+SpriteInspector.Pivot.TopLeft:左上
+SpriteInspector.Pivot.Top:トップ
+SpriteInspector.Pivot.TopRight:右上
+SpriteInspector.Pivot.Left:左
+SpriteInspector.Pivot.Right:右
+SpriteInspector.Pivot.BottomLeft:左下
+SpriteInspector.Pivot.Bottom:ボトム
+SpriteInspector.Pivot.BottomRight:右下
+SpriteInspector.Pivot.Custom:カスタム
+
+SpriteRenderer.Material:                    素材
+SpriteRenderer.SortingLayer:                ソーティングレイヤー
+SpriteRenderer.SortingOrder:                ソートオーダー
+
+AtlasEditor.Toolbar.Default:デフォルト
+AtlasEditor.Toolbar.Create:作る
+AtlasEditor.Toolbar.Trim:トリム
+AtlasEditor.Toolbar.Merge:マージ
+
+// PLAYER SETTINGS
+PlayerSettings.CrossPlatformHeader:クロスプラットフォーム設定
+PlayerSettings.PerPlatformHeader:プラットフォームごとの設定
+PlayerSettings.DefaultIcon:デフォルトのアイコン
+PlayerSettings.DefaultCursor:デフォルトのカーソル
+PlayerSettings.CursorHotspot:ホットスポットにカーソル
+PlayerSettings.NotApplicableForPlatform:このプラットフォームには適用されません。
+PlayerSettings.SharedSettingsFootnote:*複数のプラットフォーム間で共有設定。
+
+PlayerSettings.ResolutionHeader:解像度とプレゼンテーション
+PlayerSettings.IconHeader:アイコン
+PlayerSettings.SplashHeader:スプラッシュ画像
+PlayerSettings.OtherHeader:その他の設定
+
+PlayerSettings.ResolutionSubHeader:解像度
+PlayerSettings.StandalonePlayerSubHeader:スタンドアローンプレーヤーのオプション
+PlayerSettings.DashboardWidgetSubHeader:Dashboardウィジェットのオプション
+PlayerSettings.WebPlayerTemplateSubHeader:WebPlayerテンプレート
+PlayerSettings.StatusBarSubHeader:ステータスバー
+PlayerSettings.WatermarkSubHeader:透かし
+PlayerSettings.RenderingSubHeader:レンダリング
+PlayerSettings.StreamingSubHeader:ストリーミング
+PlayerSettings.IdentificationSubHeader:識別
+PlayerSettings.ConfigurationSubHeader:設定
+PlayerSettings.OptimizationSubHeader:最適化
+PlayerSettings.SubmissionSubHeader:提出
+
+PlayerSettings.NoTemplatesFound:いいえテンプレートが見つかりませんでした。
+PlayerSettings.UIPrerenderedIcon:レンダリング済みのアイコン
+PlayerSettings.ResolutionDialogBanner:設定ダイアログのバナー
+PlayerSettings.IPhoneSplashScreen:モバイルスプラッシュスクリーン*
+PlayerSettings.IPhoneHighResSplashScreen:iPhone 3.5 '' /網膜
+PlayerSettings.IPhoneTallHighResSplashScreen:iPhone 4 '' /網膜
+PlayerSettings.IPadPortraitSplashScreen:iPadのポートレート
+PlayerSettings.IPadHighResPortraitSplashScreen:高解像度。 iPadのポートレート
+PlayerSettings.IPadLandscapeSplashScreen:iPadのランドスケープ
+PlayerSettings.IPadHighResLandscapeSplashScreen:高解像度。 iPadのランドスケープ
+PlayerSettings.DefaultScreenWidth:デフォルトのスクリーン幅
+PlayerSettings.DefaultScreenHeight:デフォルトの画面の高さ
+PlayerSettings.DefaultScreenWidthWeb:デフォルトの画面幅*
+PlayerSettings.DefaultScreenHeightWeb:デフォルトの画面の高さ*
+PlayerSettings.RunInBackground:*バックグラウンドで実行
+
+PlayerSettings.DefaultScreenOrientation:*オリエンテーションデフォルト
+PlayerSettings.AutoRotationAllowedOrientation:自動回転のために許可されたオリエンテーション
+PlayerSettings.PortraitOrientation:肖像
+PlayerSettings.PortraitUpsideDownOrientation:ポートレートアップサイド·ダウン
+PlayerSettings.LandscapeRightOrientation:風景右
+PlayerSettings.LandscapeLeftOrientation:風景左
+PlayerSettings.UseOSAutorotation:アニメーションオートローテーションを使う|設定した場合、OSネイティブのアニメーションオートローテーション方式が使用されます。そうしないと向きはすぐに変更されます。
+PlayerSettings.Use32BitDisplayBuffer:32ビットのディスプレイバッファを使用* |設定ディスプレイバッファ32ビットのカラー値を保持するために作成されます。それがパフォーマンスに影響を持っているようにして、バンディングを参照している場合にのみそれを使用する。
+PlayerSettings.Use24BitDepthBuffer:24ビットのデプスバッファを使用* |設定深度バッファは、（少なくとも） 24ビットの深さの値を保持するために作成されます。それがパフォーマンスに影響がある可能性があるあなたは、 ' zファイティング'やその他の成果物を参照している場合にのみそれを使用する。
+PlayerSettings.iosShowActivityIndicatorOnLoading:表示ローディングインジケーター
+PlayerSettings.androidShowActivityIndicatorOnLoading:   表示ローディングインジケーター
+
+PlayerSettings.SupportedAspectRatios:サポートされているアスペクト比
+PlayerSettings.UIStatusBarHidden:ステータスバー非表示
+PlayerSettings.UIStatusBarStyle:ステータスバーのスタイル
+PlayerSettings.UIExitOnSuspend:オンサスペンドを終了し
+PlayerSettings.enableHWStatistics:HW統計を提出
+PlayerSettings.AlwaysDisplayWatermark:常に透かし*を表示します
+PlayerSettings.RenderingPath:*パスをレンダリング
+PlayerSettings.ActiveColorSpace:カラースペース*
+PlayerSettings.MultithreadedRendering:マルチスレッドレンダリング*
+PlayerSettings.UseDX11:* Direct3Dの11を使用して、
+PlayerSettings.DX11Warning: D3D11を使用すると、 Windows上でUnityを実行している必要があります。
+PlayerSettings.DX11NotSupported: お使いのOSやGPUはDX11をサポートしていない可能性があります。
+PlayerSettings.ActiveColorSpaceWarning:選択した色空間は、このハードウェアでサポートされていません。
+PlayerSettings.StaticBatching: 静的なバッチ処理
+PlayerSettings.DynamicBatching: ダイナミックなバッチ処理
+PlayerSettings.GPUSkinning: GPUのスキニング* |利用DX11/ES3 GPUスキニング
+PlayerSettings.FirstStreamedLevelWithResources:最初のストリーミングレベル
+PlayerSettings.StripUnusedMeshComponents: メッシュデータを最適化* |未使用のメッシュコンポーネントを削除
+PlayerSettings.IPhoneBundleIdentifier:*識別子をバンドル
+PlayerSettings.IPhoneBundleVersion:*バージョンをバンドル
+PlayerSettings.AndroidBundleVersionCode:バンドルバージョンコード
+PlayerSettings.AndroidMinSdkVersion:最小APIレベル
+PlayerSettings.AndroidPreferredInstallLocation:インストール場所
+PlayerSettings.IPhoneApplicationDisplayName:アプリケーションの表示名
+PlayerSettings.TargetPlatform:ターゲットプラットフォーム*
+PlayerSettings.AndroidTargetDevice:デバイスフィルタ
+PlayerSettings.TargetGlesGraphics:   グラフィックレベル*
+PlayerSettings.TargetResolution: ターゲット解像度
+PlayerSettings.AccelerometerFrequency: 加速度計周波数
+PlayerSettings.UIRequiresPersistentWiFi:永続無線LANが必要です
+PlayerSettings.IPhoneSdkVersion:SDKバージョン
+PlayerSettings.IPhoneTargetOSVersion:ターゲットIOSバージョン
+PlayerSettings.IPhoneStrippingLevel:*レベルのストリッピング
+PlayerSettings.IPhoneScriptCallOptimization:スクリプト呼び出しの最適化
+PlayerSettings.AndroidProfiler:内部プロファイラを有効にする
+PlayerSettings.ForceInternetPermission:インターネットアクセス
+PlayerSettings.ForceSDCardPermission:ライトアクセス
+PlayerSettings.CreateWallpaper:ライブ壁紙を作成します。
+PlayerSettings.AndroidSplashScreenScale:スプラッシュスケーリング
+PlayerSettings.PublishingHeader:公開設定
+PlayerSettings.MetroPublishingHeader:公開設定（メトロ）
+PlayerSettings.KeystoreSubHeader:キーストア
+PlayerSettings.UseExistingKeystore:既存のキーストアを使用する
+PlayerSettings.CreateNewKeystore:新しいキーストアを作成します。
+PlayerSettings.BrowseToSelectKeystoreName:キーストアの名前を参照して選択します
+PlayerSettings.BrowseKeystore:ブラウザキーストア
+PlayerSettings.CreateKeystoreDialog:新しいキーストアを作成します。 ...
+PlayerSettings.OpenKeystoreDialog: 既存のキーストアを開く...
+PlayerSettings.StorePass:キーストアのパスワード
+PlayerSettings.StoreConfirm:パスワードを確認
+PlayerSettings.EnterPassword:パスワードを入力します。
+PlayerSettings.PasswordTooShort:パスワードは6文字以上でなければなりません。
+PlayerSettings.ConfirmPassword:キーストアパスワードを確認します。
+PlayerSettings.PasswordsDoNotMatch:パスワードが一致しません。
+PlayerSettings.KeyaliasSubHeader:キー
+PlayerSettings.KeyaliasUnsigned:符号なし（デバッグ）
+PlayerSettings.CreateNewKey:新しいキーを作成します。
+PlayerSettings.Keyalias:エイリアス
+PlayerSettings.KeyPass:パスワード
+PlayerSettings.LicenseSubHeader:Androidマーケットのライセンス（ LVL ）
+PlayerSettings.AndroidLicensePublicKey:公開鍵
+PlayerSettings.APKExpansionFiles:スプリットアプリケーションバイナリ|拡張ファイルに分割アプリケーションバイナリ\ N （ Googleだけは、IFを超える50メガバイトストアプレイで使用）
+PlayerSettings.aotOptions:AOTコンパイルオプション
+PlayerSettings.StripPhysics:ストリップ物理コード
+PlayerSettings.scriptingDefineSymbols:スクリプトは、シンボルを定義する
+
+PlayerSettings.XboxTitleId:タイトルイド
+PlayerSettings.XboxImageConversion:画像変換
+PlayerSettings.XboxImageXEXFile:ImageXEX設定の上書き
+PlayerSettings.XboxLive:Xbox Liveの
+PlayerSettings.XboxSpaFile:SPAの設定
+PlayerSettings.XboxServices:サービス
+PlayerSettings.XboxAvatarEnable:アバターのレンダリングを有効にする
+PlayerSettings.XboxKinect:オンラインショップ
+PlayerSettings.XboxKinectDeployResources:Kinectのリソースを配備
+PlayerSettings.XboxKinectDeployBase:ベースリソース
+PlayerSettings.XboxGenerateSPAConfig:_SPAConfig.csを生成
+PlayerSettings.XboxSplashScreen:Xbox 360のスプラッシュ画面
+PlayerSettings.XboxEnableKinect:オンラインショップを有効にします
+PlayerSettings.XboxKinectSpeech:スピーチ
+PlayerSettings.XboxKinectAutoTracking:オートトラッキング
+PlayerSettings.XboxKinectFitness:フィットネス
+PlayerSettings.XboxKinectHeadOrientation:ヘッドの向き
+PlayerSettings.XboxKinectHeadPosition:ヘッド位置
+PlayerSettings.XboxAdditionalTitleMemorySize:余分なタイトルメモリ（ 1GB）
+PlayerSettings.XboxAdditionalTitleMemoryWarning:ターゲットは小売コンソール、または標準の512MBのXDKであれば、生産実行可能ファイルが実行に失敗することがあります。
+PlayerSettings.XboxEnableGuest:ゲストアカウントを有効にする
+PlayerSettings.BrowseGeneric:ブラウズ
+
+PlayerSettings.ps3TitleConfigPath:タイトル設定変更
+PlayerSettings.ps3DLCConfigPath:DLC設定変更
+PlayerSettings.ps3ThumbnailPath:サムネイル（ PNG 320x176 ）
+PlayerSettings.ps3BackgroundPath:背景（ PNG形式1980x1080 ）
+PlayerSettings.ps3SoundPath:サウンド（ ATRAC ）
+PlayerSettings.ps3TrophyCommId:NPコミュニケーションID
+PlayerSettings.ps3NpCommunicationPassphrase:NPコミュニケーションパスフレーズ
+PlayerSettings.ps3TrophyCommSig:NPコミュニケーションシグネチャ
+PlayerSettings.ps3TrophyPackagePath: トロフィーパッケージ
+PlayerSettings.ps3TitleSettings: タイトルの設定
+PlayerSettings.ps3BootCheckMaxSaveGameSizeKB: 最大保存ゲームサイズ（ KB ）
+PlayerSettings.ps3TrialMode:トライアルモード
+PlayerSettings.ps3SaveGameSlots:ゲームのスロットを保存
+
+PlayerSettings.wiiRegion: 地域
+PlayerSettings.wiiGameCode: ゲームコード
+PlayerSettings.wiiGameVersion: ゲーム版
+PlayerSettings.wiiCompanyCode: 会社コード
+PlayerSettings.wiiKeyboardEnabled: キーボード使用可能
+PlayerSettings.wiiSupportsNunchuk: ヌンチャク
+PlayerSettings.wiiSupportsClassicController: クラシックコントローラ
+PlayerSettings.wiiSupportsBalanceBoard: バランスボード
+PlayerSettings.wiiSupportsMotionPlus: モーションプラス
+PlayerSettings.wiiControllerCount: コントローラ数
+PlayerSettings.wiiControllers: コントローラー
+PlayerSettings.wiiMisc: 雑多
+PlayerSettings.wiiFloatingPointExceptions: FPEの例外
+PlayerSettings.wiiScreenCrashDumps: クラッシュダンプを選別
+PlayerSettings.wiiMemory: メモリ
+PlayerSettings.wiiMemoryReset: リセット
+PlayerSettings.wiiHio2Usage: Hio2使い方
+PlayerSettings.wiiLoadingScreen: ロード画面
+PlayerSettings.wiiLoadingScreenFileName: TPLファイル名
+PlayerSettings.wiiLoadingScreenPeriod: （ミリ秒）の期間
+PlayerSettings.wiiLoadingScreenRectPlacement: 配置
+PlayerSettings.wiiLoadingScreenRect: 座標
+PlayerSettings.wiiLoadingScreenBackground: 背景色
+PlayerSettings.wiiWBCWarning: （コントローラ数は4でなければなりません）
+
+PlayerSettings.MetroImageSelect: 選択... |画像を参照します。
+PlayerSettings.MetroPackaging: パッケージング
+PlayerSettings.MetroPackageName: パッケージ名は、 |システム上のパッケージを識別する一意の名前を指定します。
+PlayerSettings.MetroPackageDisplayName: パッケージの表示名は|ストアに表示されるアプリケーション名を指定します。製品名と同じ。
+PlayerSettings.MetroPackageLogo: ロゴ（ 50×50ピクセル） |製品のお店の説明ページに表示されるイメージを指定します。
+PlayerSettings.MetroPackageVersion:" バージョン|パッケージのバージョン番号。クワッド表記"" major.minor.build.revisionの」のバージョン文字列。"
+PlayerSettings.MetroPackagePublisherDisplayName: 発行元の表示名|ユーザに表示することができます出版社のフレンドリ名。会社名と同じ。
+PlayerSettings.MetroCertificate: 証明書
+PlayerSettings.MetroCertificatePublisher: 出版社
+PlayerSettings.MetroCertificateIssuer: が発行した
+PlayerSettings.MetroCertificateNotAfter: 有効期限
+PlayerSettings.MetroCertificateSelect: 選択... |証明書を参照します。
+PlayerSettings.MetroCertificateCreate: 作成... |テスト証明書を作成します。
+PlayerSettings.MetroApplication: アプリケーションUI
+PlayerSettings.MetroApplicationDisplayName: 表示名は、 |アプリの完全な名前を指定します。
+PlayerSettings.MetroApplicationDescription: 説明| Windowsでそのタイルにアプリを説明するテキストを指定します。
+PlayerSettings.MetroTile: タイル
+PlayerSettings.MetroTileLogo: ロゴ（ 150X150ピクセル） | Windowsでアプリのタイルに表示するイメージを指定します。
+PlayerSettings.MetroTileWideLogo: ワイドロゴ（ 310x150ピクセル） |サポートされている場合、Windowsでアプリの広いタイル上に表示するイメージを指定します。
+PlayerSettings.MetroTileSmallLogo: 小さなロゴ（ 30×30ピクセル） |アプリに表示する小さな画像を指定します。
+PlayerSettings.MetroTileShortName: 短い名前は、 |アプリケーションのための省略名を指定します。
+PlayerSettings.MetroTileShowName: 名前を表示する|アプリ名をロゴス指定し表示されます。
+PlayerSettings.MetroTileForegroundText: フォアグラウンドテキストは| Windowsでアプリのタイルの背景色、テキストの色の相対的な値を設定します。
+PlayerSettings.MetroTileBackgroundColor: 背景色は| Windowsでアプリのタイルの背景色を設定します。
+PlayerSettings.MetroSplashScreen: スプラッシュ画面
+PlayerSettings.MetroSplashScreenImage: スプラッシュスクリーン（ 620x300ピクセル） |アプリのスプラッシュ画面の前景画像を設定します。
+PlayerSettings.MetroSplashScreenOverwriteBackgroundColor: 背景色を上書き|それ以外の場合は、デフォルトの背景色を使用します。
+PlayerSettings.MetroSplashScreenBackgroundColor: 背景色は|アプリのスプラッシュ画面の背景色を設定します。
+
+PlayerSettings.MetroCertificatePasswordTitle: メトロ証明書のパスワードを入力してください
+PlayerSettings.MetroCertificatePasswordPassword: パスワード|証明書のパスワード。
+PlayerSettings.MetroCertificatePasswordPasswordInvalid: 無効なパスワード。
+PlayerSettings.MetroCertificatePasswordButton: OK
+
+PlayerSettings.MetroCertificateCreateTitle: メトロのためのテスト証明書を作成します。
+PlayerSettings.MetroCertificateCreatePublisher: 発行元|パッケージの出版。
+PlayerSettings.MetroCertificateCreatePublisherMissing: パブリッシャを指定する必要があります。
+PlayerSettings.MetroCertificateCreatePublisherInvalid: 無効な出版社。
+PlayerSettings.MetroCertificateCreatePassword: パスワード|証明書のパスワード。
+PlayerSettings.MetroCertificateCreatePasswordMismatch: パスワードが一致しません。
+PlayerSettings.MetroCertificateCreatePasswordInvalid: 無効なパスワード。
+PlayerSettings.MetroCertificateCreateConfirmPassword: パスワードを確認|証明書のパスワードを再入力します。
+PlayerSettings.MetroCertificateCreateConfirmPasswordConfirm: パスワードを確認します。
+PlayerSettings.MetroCertificateCreateOverwrite: 現在のファイルが上書きされます。
+PlayerSettings.MetroCertificateCreateButton: 作る
+PlayerSettings.MetroCompilationOverrides: コンパイルオーバーライド
+PlayerSettings.MetroUnprocessedPlugins: 未処理のプラグイン
+PlayerSettings.MetroEnableIndependentInputSource: 独立した入力ソース
+PlayerSettings.MetroEnableLowLatencyPresentationAPI: 低遅延プレゼンテーションAPI
+
+PlayerSettings.flashStrippingLevel:レベルストリッピング
+
+PlayerSettings.BlackBerryLandscapeSplash: 風景スプラッシュ
+PlayerSettings.BlackBerryPortraitSplash: ポートレートスプラッシュ
+PlayerSettings.BlackBerrySquareSplash: 正方形のスプラッシュ
+PlayerSettings.BlackBerryDeviceSubheader: 装置構成
+PlayerSettings.BlackBerryDeviceAddress:デバイスアドレス
+PlayerSettings.BlackBerryDevicePassword:デバイスパスワード
+PlayerSettings.BlackBerryDebuggingSubheader: デバイスのデバッグ
+PlayerSettings.BlackBerryGetLog: ログを取得
+PlayerSettings.BlackBerryBuildId:ID（自動インクリメント）を構築|自動的に署名したブラックベリーを保証するために、ビルド増分はユニークです
+PlayerSettings.BlackBerrySharedPermissions: 共有ファイル|共有ファイルへのアクセスを有効にします。
+PlayerSettings.BlackBerryCameraPermissions: カメラ|カメラへのアクセスを有効にします。
+PlayerSettings.BlackBerryGPSPermissions: GPS位置| GPSデータへのアクセスを有効にします。
+PlayerSettings.BlackBerryDeviceIDPermissions: デバイス識別|端末識別情報へのアクセスを有効にします。
+PlayerSettings.BlackBerryMicrophonePermissions:  マイク|マイクへのアクセスを有効にします。
+PlayerSettings.BlackBerryGamepadSupport: ゲームパッド|サポートとしてフラグゲームパッド。
+PlayerSettings.BlackBerryAuthoritySubHeader:RIMの署名権限
+PlayerSettings.BlackBerrySigningWindowTitle: RIMの署名機関に登録
+PlayerSettings.BlackBerrySigningWindowMessage: あなたは、アプリケーションに署名し、使用中のデバイスにncreateデバッグトークンを\にするために、RIMに登録する必要があります。追加情報については、 \ nsee www.blackberry.com/go/codesigning/
+PlayerSettings.BlackBerryIsRegistered:登録された
+PlayerSettings.BlackBerryRegister:登録
+PlayerSettings.BlackBerryUnRegister:登録を取り消す
+PlayerSettings.BlackBerryUnRegisterWindowTitle: RIMの署名権限を持つ登録解除
+PlayerSettings.BlackBerryUnRegisterWarning:警告、このアクションは、アプリケーションに署名することができなくなっ、このコンピュータの登録を解除します。 \あなたの署名キーをバックアップしていないNIFあなたは、もはやアプリケーションがこれらの署名キーNwithの\署名することができなくなります。署名とデバッグトークンを作成し続けるには、 www.blackberry.com/go/codesigning/で再びnregister \する必要があります。登録後は、\ Nyourのアプリの新バージョンでは、新しいアプリケーションではなく、アップグレードとして表示され、以前のバージョンから共有\ NDATAにアクセスすることはできません。
+PlayerSettings.BlackBerryBackup:バックアップ
+PlayerSettings.BlackBerryRestore:復元する
+PlayerSettings.BlackBerryRDKCSJPath:RDKのCSJのパス
+PlayerSettings.BlackBerryPBDTCSJPath:PBDT CSJパス
+PlayerSettings.BlackBerryCSJPin:CSJピン
+PlayerSettings.BlackBerryCSKPassword:CSKパスワード
+PlayerSettings.BlackBerryCSKConfirmPassword:CSKのパスワードを確認してください
+PlayerSettings.BlackBerryCertificateSubHeader:開発者証明書
+PlayerSettings.BlackBerryPath: パス
+PlayerSettings.BlackBerryAuthor: 著者
+PlayerSettings.BlackBerryAuthorId: 著者のId
+PlayerSettings.BlackBerryInheritAuthorId: 手動で設定して著者のId
+PlayerSettings.BlackBerryDestination: 先
+PlayerSettings.BlackBerryCertificateSelect: 選択... |証明書の参照..
+PlayerSettings.BlackBerryTokensSubheader: デバッグトークン
+PlayerSettings.BlackBerryTokenExpires: 有効期限
+PlayerSettings.BlackBerryTokenCreate: 作る
+PlayerSettings.BlackBerryTokenImport: インポート...
+PlayerSettings.BlackBerryTokenEdit: 編集
+PlayerSettings.BlackBerryTokenRenew: 更新する
+PlayerSettings.BlackBerryTokenUpload: アップロード
+PlayerSettings.BlackBerryTokenWindowTitle: デバッグトークンを管理
+PlayerSettings.BlackBerryTokenWindowMessage: デバッグトークンの宛先を指定するか、変更する既存のトークンを選択します。
+PlayerSettings.BlackBerryGenerateToken: トークンを生成する
+PlayerSettings.BlackBerryTokenInvalidError: 無効なデバッグトークン。デバッグトークンが使用されていることを確認し、アプリケーションバーファイルではありません。
+PlayerSettings.BlackBerryTokenUploadInvalidArgsError: デバイスアドレス、デバイスパスワードと有効なデバッグトークンは、すべてのデバッグトークンをアップロードする前に必要とされる。
+PlayerSettings.BlackBerryCSKPasswordError: いいえCSKパスワードが設定されていません。あなたは、デバッグの作成やアプリケーションの署名にCSKのパスワードを指定する必要があります。
+PlayerSettings.BlackBerryDebugCreateSuccess: 正常に作成され、デバッグ·トークン
+PlayerSettings.BlackBerryDebugUploadSuccess: 正常にアップロードデバッグトークン
+PlayerSettings.BlackBerryNullArgumentError: 引数で渡されたnullまたは空 - 処理することはできません。
+PlayerSettings.BlackBerryRegistrationSuccess: Sucessfully登録済みのシステム。登録ファイルは次の場所にあります。
+PlayerSettings.BlackBerryManifestCreateError: マニフェストを作成することができません
+PlayerSettings.BlackBerrySelectBackupFile: バックアップファイルを選択し
+PlayerSettings.BlackBerrySelectBackupDestination: バックアップ先を選択し
+PlayerSettings.BlackBerryCannotUploadLocalhostError: ローカルホスト（ 127.0.0.1 ）にアプリケーションをアップロードすることはできません。デバイスのIPアドレスを入力してください。これは、 [設定] - >概要 - >ネットワークの下で、デバイス上で見つけることができます
+PlayerSettings.BlackBerryInvalidIPAddressError: 有効なデバイスのIPアドレスを入力してください。これは、 [設定] - >概要 - >ネットワークの下で、デバイス上で見つけることができます
+PlayerSettings.BlackBerryDevicePWError: デバイスのパスワードは空白にすることはできません。
+PlayerSettings.BlackBerryCreateStagingArea: 対象コンテンツディレクトリを設定...
+PlayerSettings.BlackBerryCreateApplicationPackage: BlackBerryのアプリケーションパッケージを作成しています...
+PlayerSettings.BlackBerrySigningApplication: ブラックベリーと契約アプリケーション...
+PlayerSettings.BlackBerryInstallingApplication: デバイス上でアプリケーションをインストールする...
+PlayerSettings.BlackBerryLaunchingApplication: デバイス上のアプリケーションを起動する...
+PlayerSettings.BlackBerryPopulateFieldsError: すべてのフィールドが移入する必要があります。
+PlayerSettings.BlackBerryRDKDoesNotExistError: 指定されたCSK RDKファイルが存在しません。
+PlayerSettings.BlackBerryPBDTDoesNotExistError: 指定されたCSK PBDTファイルが存在しません。
+PlayerSettings.BlackBerryCSKPasswordsDoNotMatchError: CSKのパスワードが一致しません。
+PlayerSettings.BlackBerryCSKFileInvalidError: 提供CSKファイルは有効ではありません - ない著者エントリが含まれていません。
+PlayerSettings.BlackBerryCheckConsoleError: エラーがその他の詳細については、コンソールをチェックして、発生しました。
+PlayerSettings.BlackBerryDevicePins: デバイスのピンの
+PlayerSettings.BlackBerryDevicePinsError: 解析エラー: Invalid Device PIN entered.
+PlayerSettings.BlackBerryNeedMoreDevicesError: 少なくとも1つのデバイスのデバッグトークンを生成するために指定する必要があります
+PlayerSettings.BlackBerryDebugTokenPathError: デバッグトークン·パスは、デバッグトークンを生成するためにspefifiedされなければならない
+PlayerSettings.BlackBerryNeeds32bitJavaError: これは、 32ビットのJavaがインストールされていないことが検出されました。UnityのBlackBerry機能セットを利用するために、Javaの32ビット版をインストールしてください。
+PlayerSettings.BlackBerryNeedsJavaError: これは、Javaがシステムにインストールされていないことが検出されました。UnityのBlackBerry機能セットを利用するために、 Javaをインストールしてください。
+
+PlayerSettings.TizenProductDescription:製品の説明|アプリを説明するテキストを指定します。 
+PlayerSettings.TizenProductURL: 製品のURLは|製品のWebサイトへのURLを指定します。 
+PlayerSettings.TizenAuthoritySubHeader:Tizenコード署名 
+PlayerSettings.TizenCertificatePath: 証明書パス 
+PlayerSettings.TizenCurrentCertificatePassword: 証明書のパスワード 
+PlayerSettings.TizenNoCertificateChosen:に証明書選択しない 
+PlayerSettings.TizenSigningWindowTitle: Tizen証明ジェネレータ 
+PlayerSettings.TizenSigningWindowMessage: あなたはTizenストアでnpublishing\用アプリケーションに署名するために、セキュリティで保護された証明書を作成する必要があります。 
+PlayerSettings.TizenCreateCertificate:証明書の作成 
+PlayerSettings.TizenBackupCertificate:バックアップ証明書 
+PlayerSettings.TizenChooseCertificate:証明書を選択します。 
+PlayerSettings.TizenCertificateCountry:国名（二文字） 
+PlayerSettings.TizenCertificateState:都道府県名 
+PlayerSettings.TizenCertificateCity:市名を指定します 
+PlayerSettings.TizenCertificateDeveloper:開発者名 
+PlayerSettings.TizenCertificateOrganization:組織名 
+PlayerSettings.TizenCertificateDept:部署名 
+PlayerSettings.TizenCertificateEmail:電子メールアドレス 
+PlayerSettings.TizenCertificatePassword:パスワード 
+PlayerSettings.TizenCertificateConfirmPassword:パスワードを確認 
+PlayerSettings.TizenCertificateAlias:エイリアス 
+PlayerSettings.TizenCertificateFilePath:ファイル名 
+PlayerSettings.TizenPopulateFieldsError: すべてのフィールドが移入する必要があります。 
+PlayerSettings.TizenCreateStagingArea: 対象コンテンツディレクトリを設定... 
+PlayerSettings.TizenCreateApplicationPackage: Tizenのアプリケーションパッケージを作成しています... 
+PlayerSettings.TizenSigningApplication: Tizenと契約アプリケーション... 
+PlayerSettings.TizenInstallingApplication: デバイス上でアプリケーションをインストールする... 
+PlayerSettings.TizenLaunchingApplication: デバイス上のアプリケーションを起動する... 
+PlayerSettings.TizenDebuggingSubheader: デバイスのデバッグ 
+PlayerSettings.TizenGetLog: ログを取得
+
+// ANDROID KEYSTORE
+AndroidKeystore.CreateNewKey:新しいキーを作成します。 
+AndroidKeystore.KeyCreation:キーの作成 
+AndroidKeystore.Alias:エイリアス 
+AndroidKeystore.Password:パスワード 
+AndroidKeystore.PassConfirm: 確認する 
+AndroidKeystore.Validity:妥当性（年） 
+AndroidKeystore.Name:姓名 
+AndroidKeystore.OrgUnit:組織単位 
+AndroidKeystore.Organization:組織 
+AndroidKeystore.City:都市または地域 
+AndroidKeystore.State:州または県 
+AndroidKeystore.Country: 国番号（XX） 
+AndroidKeystore.EnterKeyalias:あなたの新しい鍵のエイリアスを入力します。 
+AndroidKeystore.KeyliasExists:別名が入力したキーストアにすでに存在しています。 
+AndroidKeystore.EnterPassword:キーパスワードを入力してください。 
+AndroidKeystore.PasswordTooShort:パスワードは6文字以上でなければなりません。 
+AndroidKeystore.PasswordsDontMatch: パスワードが一致しません。 
+AndroidKeystore.EnterValidityTime:鍵の有効時間を入力します。 
+AndroidKeystore.MaxValidityTime:最大有効時間は、1000年です。 
+AndroidKeystore.NoCertData:少なくとも1つの証明書発行者のフィールドは必須です。 
+AndroidKeystore.RecommendedValidityTime:25年の有効期間をお勧めします。 
+AndroidKeystore.CreateKey:キーの作成
+
+
+// BUILD SETTINGS
+BuildSettings.ScenesInBuild:ビルドにシーンが|どのシーンビルドに含める 
+BuildSettings.AddScene:追加|ビルドに加える 
+BuildSettings.AddCurrent:現在追加|ビルドに加える 
+BuildSettings.PlatformTitle:プラットフォーム|どのプラットフォーム用にビルドするには、 
+BuildSettings.Web:ウェブプレイヤー 
+BuildSettings.Standalone:PC、MacおよびLinuxのスタンドアロン 
+BuildSettings.iPhone:iOSの 
+BuildSettings.Wii:Wiiの 
+BuildSettings.PS3:PS3 
+BuildSettings.XBox360:Xbox 360の 
+BuildSettings.StandaloneGLESEmu:GLESエミュレータ 
+BuildSettings.StandaloneGLES20Emu:GLES2.0エミュレータ 
+BuildSettings.Android:アンドロイド 
+BuildSettings.FlashPlayer:FLASH PLAYER 
+BuildSettings.WP8:Windowsの携帯電話8 
+BuildSettings.Metro:Windowsストアアプリ 
+BuildSettings.BlackBerry:ブラックベリー 
+BuildSettings.Tizen:Tizen
+
+BuildSettings.NoWeb:UnityのWeb Playerの建物は、パブリックプレビューベータ版の間に無効になっています。ときUnity船それが有効になります。
+BuildSettings.NoWebButton
+BuildSettings.NoStandalone:ライセンスは、スタンドアロンの公開をカバーしていません。
+BuildSettings.NoStandaloneButton:私たちのオンラインストアへ行く
+BuildSettings.NoiPhone:ライセンスをiOSパブリッシングをカバーしていません。
+BuildSettings.NoiPhoneButton:私たちのオンラインストアへ行く
+BuildSettings.NoWii:ライセンスは、 Wiiの発行をカバーしていません。
+BuildSettings.NoWiiButton:お問い合わせ販売
+BuildSettings.NoPS3:ライセンスは、PS3の公開をカバーしていません。
+BuildSettings.NoPS3Button:お問い合わせ販売
+BuildSettings.NoXBox360:ライセンスは、Xbox 360の公開をカバーしていません。
+BuildSettings.NoXBox360Button:お問い合わせ販売
+BuildSettings.NoAndroid:ライセンスは、Androidの公開をカバーしていません。
+BuildSettings.NoAndroidButton:私たちのオンラインストアへ行く
+BuildSettings.NoNaClButton:お問い合わせ販売
+BuildSettings.NoFlash:ライセンスでは、Flashの公開をカバーしていません。
+BuildSettings.NoFlashButton:私たちのオンラインストアへ行く
+BuildSettings.NoWP8:ライセンスは、 Windowsの携帯電話8の公開をカバーしていません。
+BuildSettings.NoWP8Button:私たちのオンラインストアへ行く
+BuildSettings.NoMetro:ライセンスは、 Windowsストアの公開をカバーしていません。
+BuildSettings.NoMetroButton:私たちのオンラインストアへ行く
+BuildSettings.NoBB10:ライセンスは、BlackBerryの公開をカバーしていません。
+BuildSettings.NoBB10Button:私たちのオンラインストアへ行く
+BuildSettings.NoWindows8:このビルドでは、Windows 8以降を使用する必要があります。
+BuildSettings.NoTizen:ライセンスはTizenパブリッシングをカバーしていません。
+BuildSettings.NoTizenButton:私たちのオンラインストアへ行く
+BuildSettings.NoWindows8:このビルドでは、Windows 8以降を使用する必要があります。
+BuildSettings.NoVS2012U3:2012アップデート3以降がインストールされているVisual Studioのを見つけることができません。
+
+BuildSettings.NoStandaloneURL:HTTPS://store.unity3d.com/shop/#standalone
+BuildSettings.NoiPhoneURL:HTTPS://store.unity3d.com/shop/#iPhone
+BuildSettings.NoWiiURL:HTTPS://store.unity3d.com/shop/#Wii
+BuildSettings.NoPS3URL:HTTPS://store.unity3d.com/shop/#standalone
+BuildSettings.NoXBox360URL:Xbox 360の
+BuildSettings.NoAndroidURL:アンドロイド
+BuildSettings.NoBB10URL:ブラックベリー
+BuildSettings.NoTizenURL:Tizen
+
+BuildSettings.WebNotInstalled:ウェブPlayerはこのビルドではサポートされていません。 \ nDownloadそれをサポートするビルド。
+BuildSettings.StandaloneNotInstalled:スタンドアローンプレーヤーは、\ 。このビルドではサポートされ、それをサポートしているビルドをnDownloadされていません。
+BuildSettings.iPhoneNotInstalled:iOSのプレイヤーは、\ 。このビルドではサポートされ、それをサポートしているビルドをnDownloadされていません。
+BuildSettings.AndroidNotInstalled:Androidのプレイヤーは、\ 。このビルドではサポートされ、それをサポートしているビルドをnDownloadされていません。
+BuildSettings.XBOX360NotInstalled:Xbox 360のプレイヤーは、このビルドではサポートされていません。 \ nDownloadそれをサポートしてビルド。
+BuildSettings.PS3NotInstalled:PS3のプレイヤーは、\ 。このビルドではサポートされ、それをサポートしているビルドをnDownloadされていません。
+BuildSettings.WiiNotInstalled:Wiiが\ 。このビルドではサポートされ、それをサポートしているビルドをnDownloadされていません。
+BuildSettings.FlashNotInstalled:Flash Playerは、このビルドではサポート\ N \ nDownloadそれをサポートするビルドされていません。
+BuildSettings.MetroNotInstalled:WindowsストアPlayerがビルドが。 \ nこれではサポート\ N \ nDownloadがサポートしてビルドされていません。
+BuildSettings.WP8NotInstalled:Windowsの携帯電話8 Playerが。このビルドNIN \をサポート\ N \ nDownloadがサポートしてビルドされていません。
+BuildSettings.TizenNotInstalled:Tizenは、このビルドではサポートされていません。 \ nDownloadそれをサポートしてビルド。
+BuildSettings.BlackBerryNotInstalled:ブラックベリーは、 \ 。このビルドではサポートされ、それをサポートしているビルドをnDownloadされていません。
+BuildSettings.DownloadButton:ダウンロード
+
+BuildSettings.iPhoneNotAllowedWindows:建物iOSアプリは、Windowsでサポートされていません。
+
+BuildSettings.StandaloneTarget:ターゲットプラットフォーム|スタンドアロンビルドの先プラットフォーム
+BuildSettings.Architecture:アーキテクチャ|スタンドアロンのビルドアーキテクチャ
+BuildSettings.StandaloneWindows:Windowsの
+BuildSettings.StandaloneWindows64:Windows 64ビット
+BuildSettings.MetroPlayerX86:Windowsのメトロ86
+BuildSettings.MetroPlayerX64:Windowsのメトロx64の
+BuildSettings.MetroPlayerARM:WindowsのメトロARM
+BuildSettings.StandaloneOSXIntel:Mac OS Xの
+BuildSettings.DashboardWidget:Mac OS XのDashboardウィジェット
+BuildSettings.StandaloneLinux:リナックス
+BuildSettings.StandaloneLinux64:Linuxの64ビット版
+
+BuildSettings.PS3BuildSubtarget:タイプを構築
+BuildSettings.PS3BuildSubtargetPCHosted:PCホステッド
+BuildSettings.PS3BuildSubtargetHddTitle:PSNの提出
+BuildSettings.PS3BuildSubtargetBluRayTitle:ディスクの提出
+
+BuildSettings.WebPlayerStreamed:ストリーミング配信|ウェブプレーヤーがでストリーミングされていますか？
+BuildSettings.WebPlayerOfflineDeployment:オフラインインストール| Web Playerのオンラインリソースを参照していません
+
+BuildSettings.NaCl:GoogleのNative Clientの
+
+BuildSettings.DebugBuild:開発ビルド
+BuildSettings.ConnectProfiler:自動接続プロファイラ
+BuildSettings.AllowDebugging:スクリプトのデバッグ
+BuildSettings.ExplicitNullChecks:       明示的なnullチェック
+BuildSettings.EnableHeadlessMode:       ヘッドレスモード
+
+BuildSettings.ExportAndroidProject:GoogleのAndroidプロジェクト
+
+BuildSettings.SymlinkiOSLibraries:シンボリックリンクUnityライブラリ
+
+BuildSettings.Build:建てる
+BuildSettings.Export:輸出
+BuildSettings.BuildAndRun:ビルドして実行
+BuildSettings.SwitchPlatform:プラットフォームを切り替える
+
+BuildSettings.WiiBuildSubtarget:タイプを構築
+BuildSettings.WiiBuildSubtargetDVD:ディスク
+BuildSettings.WiiBuildSubtargetWiiWare:Wiiウェア
+BuildSettings.WiiBuildSubtargetDVDLibrary:リンクステップを持つディスク
+BuildSettings.WiiBuildSubtargetWiiWareLibrary:リンクステップとWiiウェア
+BuildSettings.WiiBuildDebugLevel:デバッグレベル
+BuildSettings.WiiBuildDebugLevelFull:フル
+BuildSettings.WiiBuildDebugLevelMinimal:最小限の
+BuildSettings.WiiBuildDebugLevelNone:なし
+BuildSettings.WiiBuildDebugLevelFullDesc:\ nNintendo Wiiのプロファイラは、 \ nHio2ライブラリは、\ nこの最適化をリンクにリンクが有効nMemoryプロファイリング\有効にアサート
+BuildSettings.WiiBuildDebugLevelMinimalDesc:メモリプロファイリングが有効になって\ nNintendo Wiiのプロファイラは\ nHio2ライブラリは\ nOptimizationsをリンクにリンクが有効
+BuildSettings.WiiBuildDebugLevelNoneDesc:最適化は、 \ nこのデバッグ情報を有効に
+
+BuildSettings.XboxBuildSubtarget:タイプを構築
+BuildSettings.XboxBuildSubtargetDevelopment:開発プレーヤー
+BuildSettings.XboxBuildSubtargetMaster:マスタープレーヤー
+BuildSettings.XboxBuildSubtargetDebug:デバッグプレーヤー
+
+BuildSettings.XboxRunMethod:                Runメソッド
+BuildSettings.XboxRunMethodHDD:             HDDへのコピー
+BuildSettings.XboxRunMethodDiscEmuFast:     DVDエミュレーション（ノータイミング）
+BuildSettings.XboxRunMethodDiscEmuAccurate: DVDエミュレーション（正確な）
+
+BuildSettings.AndroidBuildSubtarget:テクスチャ圧縮
+BuildSettings.AndroidBuildSubtargetGeneric:オーバーライドしないでください
+BuildSettings.AndroidBuildSubtargetDXT:DXT （ Tegraは）
+BuildSettings.AndroidBuildSubtargetPVRTC:PVRTC （のPowerVR ）
+BuildSettings.AndroidBuildSubtargetATC:ATC （副腎）
+BuildSettings.AndroidBuildSubtargetETC:ETC1またはRGBA16 （ GLES 2.0 ）
+BuildSettings.AndroidBuildSubtargetETC2: ETC2 （ GLES 3.0 ）
+BuildSettings.AndroidBuildSubtargetASTC: ASTC
+ 
+BuildSettings.FlashBuildSubtarget: ターゲットプレイヤー
+BuildSettings.FlashSubtarget11dot2:のFlashPlayer 11.2 、 SWFの15
+BuildSettings.FlashSubtarget11dot3:のFlashPlayer 11.3 、 SWFの16
+BuildSettings.FlashSubtarget11dot4:のFlashPlayer 11.4 、 SWFの17
+BuildSettings.FlashSubtarget11dot5:のFlashPlayer 11.5 、 SWFの18
+BuildSettings.FlashSubtarget11dot6:のFlashPlayer 11.6 、 SWFの19
+BuildSettings.FlashSubtarget11dot7:のFlashPlayer 11.7 、 SWFの20
+BuildSettings.FlashSubtarget11dot8:のFlashPlayer 11.8 、 SWFの21
+
+BuildSettings.MetroBuildType: Type
+BuildSettings.MetroBuildTypeAppX:	AppX
+BuildSettings.MetroBuildTypeVisualStudioCpp:	XAML C++ Solution
+BuildSettings.MetroBuildTypeVisualStudioCSharp:	XAML C# Solution
+BuildSettings.MetroBuildTypeVisualStudioCppDX:	D3D11 C++ Solution
+BuildSettings.MetroBuildTypeVisualStudioCSharpDX: D3D11 C# Solution
+BuildSettings.MetroSDK: SDK
+BuildSettings.MetroSDK80: 8.0
+BuildSettings.MetroSDK81: 8.1
+
+BuildSettings.BlackBerryBuildSubtarget:テクスチャ圧縮
+BuildSettings.BlackBerryBuildType:			 Build Type
+BuildSettings.BlackBerryBuildSubtargetGeneric: Don't override		
+BuildSettings.BlackBerryBuildSubtargetPVRTC:	 PVRTC (PowerVR)	
+BuildSettings.BlackBerryBuildSubtargetATC:	 ATC (Adreno)
+BuildSettings.BlackBerryBuildSubtargetETC:	 ETC1 or RGBA16 (GLES 2.0)
+BuildSettings.BlackBerryBuildTypeDebug:		 Local (Token Required)
+BuildSettings.BlackBerryBuildTypeSubmission:	 Signed (Submission)
+BuildSettings.BlackBerryValidationFailed:著者ID、デバイスアドレスとデバイスパスワードは、すべてのビルドおよび実行を使用するために設定する必要があります
+
+// BuildUploadCompletedWindow
+// -------------------------------------------------------------------
+BuildUploadCompletedWindow.WindowTitleSuccess:発行完了 
+BuildUploadCompletedWindow.TextHeaderSuccess:成功！ 
+BuildUploadCompletedWindow.MainTextSuccess:あなたのプロジェクトが構築され、Unity開発者ネットワークにアップロードされています。 
+
+BuildUploadCompletedWindow.WindowTitleFailure:発行に失敗しました 
+BuildUploadCompletedWindow.TextHeaderFailure:公開することができません。 
+BuildUploadCompletedWindow.MainTextFailureRecoverable:我々は、この時点でビルドを公開することができませんでした。Unity開発者ネットワークは、回答 
+BuildUploadCompletedWindow.MainTextFailureCritical:ビルドを公開しようとしたときに、Unityは、次の重要な問題を持っていた 
+BuildUploadCompletedWindow.FailurePreLinkAssistText:この問題が解決しない場合は、ご相談ください 
+BuildUploadCompletedWindow.UDNStatusLinkText:UDNウェブサイト 
+BuildUploadCompletedWindow.FailurePostLinkAssistText:支援とサービスのステータス情報のため。 
+
+BuildUploadCompletedWindow.CopyToClipboardMessage:クリップボードにコピー 
+BuildUploadCompletedWindow.DidCopyToClipboardMessage:クリップボードにコピーしたURL 
+BuildUploadCompletedWindow.CancelButton:キャンセル 
+BuildUploadCompletedWindow.FixButton:問題を修正 
+BuildUploadCompletedWindow.CloseButton:クローズ 
+
+BuildUploadCompletedWindow.ShareMessage:私の新しいwebplayerをチェック！
+
+
+// UploadingBuildsMonitor
+// -------------------------------------------------------------------
+UploadingBuildsMonitor.ProgressBarText:ライブ押し... 
+UploadingBuildsMonitor.NoSessionDialogHeader:ログインが必要です 
+UploadingBuildsMonitor.NoSessionDialogText: UDNにビルドを公開するためには、AssetStore経由でログインし、チェックボックス「サインイン状態を「カチカチする必要があります。 
+UploadingBuildsMonitor.NoSessionDialogButtonOK:[OK] 
+UploadingBuildsMonitor.OverwriteDialogHeader:既存のビルドを上書きしますか？ 
+UploadingBuildsMonitor.OverwriteDialogText: あなたがアップロードしているビルドがすでにサーバー上に存在している。あなたはこの1とオンラインビルドを交換するか、それより新しいバージョンを作成しますか？を 
+UploadingBuildsMonitor.OverwriteDialogButtonOK:交換する 
+UploadingBuildsMonitor.OverwriteDialogButtonCancel:キャンセル 
+UploadingBuildsMonitor.OverwriteDialogButtonVersion:バージョン
+
+
+// BumpMapSettingsFixingWindow
+// -------------------------------------------------------------------
+BumpMapSettingsFixingWindow.overviewText:素材は、通常のマップとしてテクスチャを使用しています。\ nこのテクスチャはインポート設定における法線マップとしてマークする必要があります。
+
+// Sprite Packer
+//-------------------
+SpritePackerWindow.WindowTitle:スプライトパッカー（開発版）
+
+// Sprite Editor
+//-------------------
+SpriteEditorWindow.WindowTitle:スプライトエディタ 
+SpriteEditor.Slicing.DeleteAll: 削除既存|スライス作業の前に、既存のすべてのスプライトの資産を削除 
+SpriteEditor.Slicing.Smart: スマート|スライス作業からスライスrectsに既存のスプライトrectsを一致させよう 
+SpriteEditor.Slicing.Safe: 安全|そのまま既存のスプライトrectsキープ 
+SpriteEditor.NoTextureOrSpriteSelected: 選択されていませんテクスチャまたはスプライト 
+SpriteEditor.TextureIsScaledWarning: スプライトはスケールされたテクスチャから生成することができません
+
+// Lightmap Editor
+// -------------------------------------------------------------------
+LightmapEditor.WindowTitle:ライトマッピング
+LightmapEditor.ShadowDistance: 影距離|どこまで完全にライトマップするライトマップ遷移からのバウンスで照明をリアルタイムで提供する必要があります。
+LightmapEditor.UseLightmaps: 使用ライトマップは|レンダリング中にライトマップを使用するか、無視します。
+LightmapEditor.UseDualInForward: 前進 - レンに使用してください。 |進むレンダリングで二重のライトマップを有効にします（カスタムシェーダが必要です！ ）
+LightmapEditor.MaxTextureSize: 最大アトラスサイズ|各アトラスのサイズの上限。
+LightmapEditor.SkyLightColor: スカイライトカラー|スカイライトは、すべての方向から空から発せられた光をシミュレート - 屋外のシーンに最適です。
+LightmapEditor.SkyLightIntensity: スカイ光強度|スカイライトはすべての方向から空から発せられた光をシミュレート - 屋外のシーンに最適です。
+LightmapEditor.Bounces: バウンス|何回べき光バウンス。 0は、ファイナルギャザー無効にして、唯一の直接光を焼成されます。
+LightmapEditor.BounceBoost: ブーストバウンス|間接光をブースト、シーン内のバウンス光の量を増加させるために使用することができる。
+LightmapEditor.BounceIntensity: ただ、乗算間接光に|強度をバウンス。
+LightmapEditor.Quality: 品質|速いのための多くのファイナルギャザーやアンチエイリアシングの設定やよりよいベーキング用のプリセット。
+LightmapEditor.FinalGather.Rays: ファイナルギャザーレイズ|その他のファイナルギャザーの光線は、より良い品質を与える
+LightmapEditor.FinalGather.ContrastThreshold: より高い値がライトマップは、よりスムーズなだけでなく、緩い詳しくなるでしょう|しきい値を比較してください。
+LightmapEditor.FinalGather.GradientThreshold: 補間|ブレンドの簡単な（ 0 ）と先進の間（ 1 ） 。 Advancedは、一般的に良い結果を与えるが、アーティファクトを導入する可能性があります。
+LightmapEditor.FinalGather.InterpolationPoints: 補間点は、 |最終的な数は、間を補間するためのポイントを集める。値が大きいほど、より滑らかな結果を与えるだけでなく、照明のディテールを滑らかにすることができます。
+LightmapEditor.FinalGather.InterpolationPoints: 補間点は、 |最終的な数は、間を補間するためのポイントを集める。値が大きいほど、より滑らかな結果を与えるだけでなく、照明のディテールを滑らかにすることができます。
+LightmapEditor.LODSurfaceDistance: LODの表面距離|低LODにハイポリゴン面からライトマップキャストするために使用されている最大のワールド空間距離。ハイポリゴン/ローポリ法線マップベーキングの実行方法と同様に動作します。
+LightmapEditor.Resolution: 解像度|世界の単位当たりのテクセルでのライトマップの解像度。
+LightmapEditor.ObjectSettings: オブジェクト|現在選択されているオブジェクト焼く設定。
+LightmapEditor.BakeSettings: 焼く|グローバル焼く設定。
+LightmapEditor.DisplayControls: 表示|編集ライトマッピング関連の表示を制御します。
+LightmapEditor.DisplayControls.VisualiseResolution: 表示解像度は|ライトマップテクセルが現在費やされている方法を示しています。ライトマップ解像度モードにシーンビューを切り替えます。
+LightmapEditor.DisplayControls.EditProbes: 編集プローブ
+LightmapEditor.DisplayControls.ShowProbes: 表示するプローブ
+LightmapEditor.DisplayControls.ShowCells: 表示セル
+LightmapEditor.DisplayControls.DynamicUpdateProbes: リアルタイム四面体
+LightmapEditor.EmptySelection: シーンからの光、メッシュレンダラーまたは地形を選択します。
+LightmapEditor.ScaleInLightmap: スケールはライトマップでは|この値を掛けた物体の表面は、ライトマップにサイズの決定。 0 - このオブジェクトをライトマップはありません。
+LightmapEditor.Static: 静的|静的メッシュレンダラーと静的地形は​​ライトマップされます。
+LightmapEditor.Light.IndirectIntensity: 間接光強度乗数|強度をバウンス。
+LightmapEditor.Light.Shadows: 焼き影
+LightmapEditor.Light.ShadowSamples: シャドウサンプル|直接影のサンプル数。
+LightmapEditor.Light.ShadowRadius: 影半径|直接影を計算する際に考慮された光のサイズ。
+LightmapEditor.Light.ShadowAngle: 影の角度|直接影を計算する際に考慮光の大きさ。
+LightmapEditor.Terrain.LightmapSize: ライトマップサイズ|これだけの地形で使用されるライトマップのサイズを定義します。
+LightmapEditor.AO: アンビエントオクルージョン|アンビエントオクルージョンの量は、無効にするには、0に設定してください。
+LightmapEditor.AOMaxDistance: 最大距離|この距離を超えて光線が遮蔽されていないものと考えられる。無限に長い線の0 。
+LightmapEditor.AOContrast: コントラストは|完全閉塞しないように閉塞間の遷移を制御します。
+LightmapEditor.Maps: 地図|ライトマップの編集可能なリスト。
+LightmapEditor.Probes: プローブ|番組は、光プローブのクラウドを編集することができます。
+LightmapEditor.MapsArraySize: 配列サイズ|ライトマップの配列の長さ。
+LightmapEditor.Mode: モード|シングルまたはデュアルライトマップモード。
+LightmapEditor.LockAtlas: ロックアトラス|ロックアトラスが有効になっている場合は、自動atlasingが実行されず、ライトマップインデックス、タイルやオブジェクトのオフセットは変更されません。
+LightmapEditor.Atlas: アトラス
+LightmapEditor.AtlasIndex: ライトマップインデックス
+LightmapEditor.AtlasTilingX: タイルのX
+LightmapEditor.AtlasTilingY: タイルのY
+LightmapEditor.AtlasOffsetX: Xのオフセット
+LightmapEditor.AtlasOffsetY: Yのオフセット
+LightmapEditor.ClampedSize: ライトマップ内のオブジェクトのサイズは、MAXアトラスサイズに達しました。 |あなたはこのオブジェクトのより高い解像度が必要な場合は、より小さなメッシュに分割したりLightmapEditorSettingsクラスを経由して、より高い最大アトラスサイズを設定します。
+LightmapEditor.NoNormalsNoLightmapping: レンダラが使用したメッシュは、法線を持っていません。法線はライトマッピングのために必要とされる。
+LightmapEditor.DirectionalLightmapsProOnly: ディレクショナルライトマップは、 Proのライセンスが必要です。
+LightmapEditor.IncorrectLightProbePositions: 光プローブは、そうでなければ、彼らが焼いたことはありません、ボリュームを構成する必要があります。
+LightmapEditor.Padding: パッド|形状間のテクセル分離。
+LightmapEditor.TextureCompression: 圧縮|パフォーマンスが向上し、スペース要件を低下させるがアーティファクトを導入可能性があります。
+LightmapEditor.LightProbes: 光プローブは、 |異なるLightProbes.assetはここで割り当てることができます。これらの資産は、光プローブを含むシーンを焼成することによって生成される。
+
+// NavMesh Settings
+// --------------------
+NavMeshEditorWindow.ShowNavMesh:ショーNavMesh
+NavMeshEditorWindow.ShowHeightMesh: ショーHeightMesh
+NavMeshEditorWindow.Radius: 半径は、 |どのように壁の近くにナビゲーションメッシュが存在する。エージェントの半径である。
+NavMeshEditorWindow.Height: 高さ|どのくらいの垂直隙間空間が存在している必要があります。エージェントの高さを表す。
+NavMeshEditorWindow.MaxSlope: 最大勾配|最大エージェント·スロープ
+NavMeshEditorWindow.DropHeight: 最大エージェント·落下高|高さを落とす
+NavMeshEditorWindow.StepHeight: ステップの高さ|最大エージェント·ステップアップの高さ
+NavMeshEditorWindow.JumpDistance: ジャンプ距離|最大エージェント·ジャンプ距離
+NavMeshEditorWindow.HeightMesh: 高さのメッシュ|正確なエージェントの配置のための正確な高さのメッシュを生成します（遅い）
+NavMeshEditorWindow.MinRegionArea: ミン地域を選択する| navmesh領域ができることを最小面積
+NavMeshEditorWindow.WidthInaccuracy: 幅不正確％ |メッシュ近似は、半径のこの割合水平不正確さを可能にする
+NavMeshEditorWindow.HeightInaccuracy: 高さ不正確％ |メッシュ近似は高さのこの割合垂直不正確さを可能にする
+
+// Occlusion Culling Editor
+// --------------------
+OcclusionCullingWindow.WindowTitle: 閉塞|
+OcclusionCullingWindow.UnitScale: 単位スケールは、 |すべての演算パラメータは、シーンの単位規模に依存している。単位スケール値は1メートルにいくつあるかのシーンの依存ユニットが定義されます。だから、シーン単位はメートルである場合には、単位スケールは1であり、あなたがあなたのユニットとして足を使用している場合、あなたはそれを反映して3.28にunitScale値を変更する必要があります。
+OcclusionCullingWindow.SafeOccluderDistance: 安全な閉塞距離|オクルージョンカリングの結果が常に正しいとはなり閉塞器へのランタイム·カメラからの最短距離。あなたがクリップ面付近のランタイムのカメラよりも小さくなるように、この値を設定すると、結果が常に正しいとなります。値が大きい場合計算が速くなります。実行時のカメラは厚い遮蔽物に近い行くことができることに注意してください。
+OcclusionCullingWindow.SmallestHole: 最小のホール|カメラが見ることになってそれを通してジオメトリの最小の穴。パラメータの一つの浮動小数点値は、穴を通ってフィットする3Dオブジェクトの最大の範囲すなわち虚数最小の穴の直径を表している。
+OcclusionCullingWindow.BackfaceThreshold: バックフェースしきい値|背面しきい値はbackfacesをテストすることによって、不必要な詳細を軽減サイズの最適化である。 100の値は、堅牢であり、任意のbackfacesを削除することはありません。 5の値は、積極的に目に見えるbackfacesのある場所に基づいてデータを減らします。アイデアは、通常、有効なカメラの位置は、多くのbackfacesを見ることができないということです。例えば、地形の下やソリッドオブジェクト内部のジオメトリを除去することができる。
+OcclusionCullingWindow.FarClipPlane: ファークリップ面|焼成時に使用される遠クリップ面。これは、シーン内の任意のカメラで使用される最大のファークリップ面と一致する必要があります。 0.0の値は無限大に遠い平面を設定します。
+OcclusionCullingWindow.SmallestOccluder: 最小オクルーダ|オクルージョンカリングを行うときに、他のオブジェクトを非表示にするために使用される最小のオブジェクトのサイズ。 4の値を選択した場合は、その後、 4メートルを超えるか、幅が広くなっているすべてのオブジェクトは可視性とそれがないでしょうよりも小さいオブジェクトをブロックします。この値は、閉塞の精度とストレージサイズとのトレードオフである。
+OcclusionCullingWindow.BakeQuality: 焼く品質|プレビューモードは、迅速な結果を得るために使用することができ、オブジェクトが早すぎる淘汰される可能性があります。ビルドを行うときに本番モードを使用します。
+
+OcclusionCullingWindow.MemoryLimit: メモリ制限|生成されたデータの合計メモリを制限するためのヒント。より大きなメモリを搭載した制限は、より良いカリング結果を達成することができる値。値はバイト単位でメモリの制限である。
+OcclusionCullingWindow.OcclusionCullingMode: 技術|実行時に使用される選別方法。
+OcclusionCullingWindow.DefaultParameters: デフォルトパラメータ|デフォルトパラメータが任意のシーンは高速で計算していることを保証し、オクルージョンカリングの結果は良好である。パラメータは常にシーン特有のものように、微調整のシーンのパラメーターのシーンごとに、より良い結果が達成される。すべてのパラメータは、シーンの単位スケールに依存し、それは、単位スケールパラメータはデフォルト値を設定する前に正しく設定されていることが不可欠である。
+
+StaticOcclusionCullingMode.PVSOnly: PVSのみ|静的オブジェクトのみが閉塞カリングされます。動的なオブジェクトは、視錐台に基づいて淘汰されます。この技術は、CPUの最小のオーバーヘッドを持っていますが、動的なオブジェクトが淘汰されていないので、それがわずか数移動物体＆キャラクターでゲームをお勧めします。すべての可視性を事前に計算しているので、あなたは、開いたり、実行時にポータルを閉じることはできません。
+
+StaticOcclusionCullingMode.PVSAndDynamicObjects: PVSとダイナミックオブジェクトは|静的オブジェクトは、事前計算の可視性を使用して淘汰されています。動的オブジェクトは、ポータルカリングを使用して淘汰されています。この手法は、実行時のオーバーヘッドとカリング効率との間の良好なバランスです。すべての可視性を事前に計算しているので、あなたは、開いたり、実行時にポータルを閉じることはできません。
+
+StaticOcclusionCullingMode.AutomaticPortals: 自動ポータル生成は|ポータルは自動的に生成されます。静的および動的なオブジェクトは、ポータルを通じて淘汰される。これは、実行時にと密接なポータルを開くことができます。この手法は、最も正確にオブジェクトをカリングだけでなく、 CPUの上で最もパフォーマンスのオーバーヘッドを持っています。
+
+StaticOcclusionCullingMode.PortalsAndPVS: 自動PortalとPVSは|ポータルとPVSの両方が生成されます。ランタイムで発行されるクエリでは、カメラを使用して設定することができます。個々の閉塞情報を必要とするシーンでカメラが多い場合に便利です。それは、他のカメラのためのメインカメラとPVSクエリのポータルクエリを使用することをお勧めします。
+
+StaticOcclusionCullingMode.ManuallyPlacedPortalsOnly: 手動で置かれたポータルは専用|手動でのみ置かポータル（ OcclusionCullingPortal成分）閉塞の目的で使用されます。これは、あなたのポータルを完全に制御し、カリング効率と実行時のオーバーヘッドの上よって完全に制御することができます。
+
+
+
+// Script Execution Order Inspector
+// -------------------------------------------------------------------
+ScriptExecutionOrderInspector.HelpText:カスタムオーダーにスクリプトを追加し、順序を変更するためにそれらをドラッグします。 \ Nカスタムオーダーデフォルト時間前または後に実行することができますし、上から下に実行されるにnScriptsを\ 。他のすべてのスクリプトは、それらがロードされている順序でデフォルトの時間で実行されます。 \ N \ N （スクリプトの順番を変更すると、複数のスクリプトのメタデータを変更することがあります。 ）
+ScriptExecutionOrderInspector.DefaultTime:時間をデフォルト|カスタムオーダー内のすべてのスクリプトではないが、デフォルト時に実行されます。
+
+// Navigation Mesh
+// --------------------
+NavmeshEditor.ObjectSettings: オブジェクト|現在選択されているオブジェクト焼く設定。
+NavmeshEditor.BakeSettings: 焼く| Navmeshベーク設定。
+NavmeshEditor.LayerSettings: 層| Navmesh層設定。
+NavmeshEditor.WindowTitle: ナビゲーション
+
+
+// Generic Inspector
+// --------------------
+GenericInspector.ScriptIsMissing: スクリプトが見つかりません。 \しり、有効なスクリプトを割り当てる。
+GenericInspector.ScriptIsInvalid: 関連するスクリプトがロードすることはできません。 \修正しりどんなエラー\ NANDは、有効なスクリプトを割り当てるコンパイルします。
+
+// Animation Clip Inspector
+// --------------------
+AnimationClipEditor.StartFrame: クリップのフレームを開始|起動します。
+AnimationClipEditor.EndFrame: 終わり|クリップの終了フレーム。
+AnimationClipEditor.LoopTime: ループ時間|アニメーションを通して再生し、その後、最後に到達したときに再起動することが可能になります。
+AnimationClipEditor.LoopPose: シームレスにアニメーションループを作るために有効にします|ループがポーズ。
+AnimationClipEditor.LoopCycleOffset: サイクルオフセット|我々は別の時間でそれを起動したい場合は、ループするアニメーションのサイクルまでのオフセット。
+
+AnimationClipEditor.BakeIntoPoseOrientation: ルート回転は骨の運動に焼成するために有効にします|ポーズ中に、焼く。ルート回転がルートモーションとして保存されるように無効にします。
+AnimationClipEditor.OrientationOffsetY: オフセット| （度）ルート回転までのオフセット。
+AnimationClipEditor.BasedUponOrientation: ルート回転が基づいている何|に基づく。
+AnimationClipEditor.BasedUponStartOrientation: ルート回転が基づいている何| （開始時）に基づく。
+AnimationClipEditor.BasedUponRotation.Original: オリジナル|それは、ソース·ファイルで作成されているような回転を保ちます。
+AnimationClipEditor.BasedUponRotationHuman.BodyOrientation: 体の向き|前方を探す上半身を保持します。
+AnimationClipEditor.BasedUponRotation.RootNodeRotation: ルートノード回転は|前方を探す上半身を保持します。
+
+AnimationClipEditor.BakeIntoPosePositionY:垂直根運動は骨の運動に焼成するために有効にします|ポーズ中に、焼く。垂直ルートモーションがルートモーションとして保存されるように無効にします。
+AnimationClipEditor.PositionOffsetY: オフセット|垂直根の位置までのオフセット。
+AnimationClipEditor.BasedUponPositionY: 垂直ルート位置のベースとは何|に基づく。
+AnimationClipEditor.BasedUponStartPositionY: 垂直ルート位置のベースとは何| （開始時）に基づく。
+AnimationClipEditor.BasedUponPositionY.Original: オリジナル|それは、ソース·ファイルで作成されているように垂直位置を保持します。
+AnimationClipEditor.BasedUponPositionHuman.CenterOfMass: 質量中心|位置を変換ルートと整合質量の中心を保持します。
+AnimationClipEditor.BasedUponPosition.RootNodePosition: ルートノードの位置
+AnimationClipEditor.BasedUponPositionYHuman.Feet: 足が|ルートに合わせ足が位置を変換保持します。
+
+
+AnimationClipEditor.BakeIntoPosePositionXZ: 水平根運動は骨の運動に焼成するために有効にします|ポーズ中に、焼く。水平根の動きがルートモーションとして保存されるように無効にします。
+AnimationClipEditor.BasedUponPositionXZ: 水平根位置が基づいている何|に基づく。
+AnimationClipEditor.BasedUponStartPositionXZ: 水平根位置が基づいている何| （開始時）に基づく。
+AnimationClipEditor.BasedUponPositionXZ.Original: オリジナル|それは、ソース·ファイルで作成されているように水平方向の位置を保持します。
+
+AnimationClipEditor.Mirror: ミラー|ミラーは、右のこのクリップの左側。
+AnimationClipEditor.Curves: 曲線|パラメータに関連した曲線。
+AnimationClipEditor.Mask: 不要なカーブを削除するには、このクリップのマスクを構成する|マスク。
+
+// Avatar Mask Inspector
+// --------------------
+AvatarMaskEditor.BodyMask: ヒューマノイド|アクティブな身体の部分を定義します。また、アニメーションカーブをアニメーションクリップのために輸入されるかを定義します。
+AvatarMaskEditor.TransformMask: アクティブな変換を定義します。 |変換。また、アニメーションカーブをアニメーションクリップのために輸入されるかを定義します。
+AvatarMaskEditor.MaskDefinition: 定義| 、このモデルから作成間および選択する他のアバターからコピーします。最初のものは、このファイルのマスクを作成し、第1は、アニメーションをインポートする別のファイルからマスクを使用しています。
+AvatarMaskEditor.CreateFromThisModel: このファイルからのモデルに基づいてマスクを作成します。 |このモデルから作成します。ヒューマノイドリグのためのすべての人間は常にインポートされ変換し、筋肉の曲線に変換し、こうして彼らはオフにすることはできません。
+AvatarMaskEditor.CopyFromOther: 他のマスクからコピー|アニメーションクリップをインポートする別のファイルからマスクをコピーします。
+
+// Animatable material properties
+// -----------------------------
+AnimatableMaterialUtility.Title: アニメーション可能材料特性
